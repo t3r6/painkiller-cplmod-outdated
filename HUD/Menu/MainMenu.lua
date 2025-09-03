@@ -2,108 +2,86 @@ MainMenu =
 {
 	firstTimeShowItems = 80,
 
-	--bgStartFrame = { 120, 243, 267 },
-	--bgEndFrame   = { 180, 266, 291 },
+	bgStartFrame = { 120, 243, 267 },
+	bgEndFrame   = { 180, 266, 291 },
 
-	textColor	= R3D.RGBA( 200, 200, 170, 255 ),
+	textColor	= R3D.RGBA( 100, 100, 100, 255 ),
 	disabledColor = R3D.RGBA( 155, 155, 155, 255 ),
 	
-	fontBigTex  = "../CPLGui/font_texturka_alpha",
-	fontSmallTex  = "../CPLGui/font_texturka_alpha",
-	descColor	= R3D.RGB( 200, 200, 170 ),
+	fontBigTex  = "HUD/font_texturka_alpha",
+	fontSmallTex  = "HUD/font_texturka_alpha",
+	descColor	= R3D.RGB( 255, 255, 255 ),
 
-	useItemBG = false,
+	useItemBG = true,
 
 	items		=
 	{
-		
-		modcredits =
-		{
-			text = "CPL Mod Credits",
-			desc = "CPL Mod Credits",
-			x	 = 400,
-			y	 = 50,
-			action = "PainMenu:ActivateScreen(CPLModCredits)",
-			align = MenuAlign.Center,
-			sndLightOn = "menu/menu/option-light-on_main4",
-			textColor	= R3D.RGBA( 200, 200, 170, 255 ),
-			fontBigSize = 26,
-		},
-	
 		SignAPact =
 		{
 			text = TXT.Menu.SignAPact,
 			desc = TXT.MenuDesc.SignAPact,
-			x	 = 950,
-			y	 = 260,
+			x	 = -1,
+			y	 = 210,
 			action = "PainMenu:SignAPact()",
 --			action = "PMENU:SwitchToMap()",
 			sndLightOn = "menu/menu/option-light-on_main",
-			align = MenuAlign.Right,
-			disabled = 1,
+--			disabled = 1,
 		},
 		
 		LoadGame =
 		{
 			text = TXT.Menu.LoadGame,
 			desc = TXT.MenuDesc.LoadGame,
-			x	 = 950,
-			y	 = 320,
+			x	 = -1,
+			y	 = 290,
 			action = "PainMenu:ActivateScreen(LoadSaveMenu)",
-			disabled = 1,
+--			disabled = 1,
 			sndLightOn = "menu/menu/option-light-on_main2",
-			align = MenuAlign.Right,
 		},
 
 		Multiplayer =
 		{
 			text = TXT.Menu.Multiplayer,
 			desc = TXT.MenuDesc.Multiplayer,
-			x	 = 950,
-			y	 = 380,
+			x	 = -1,
+			y	 = 370,
 			action = "PainMenu:ActivateScreen(MultiplayerMenu)",
-			align = MenuAlign.Right,
 			sndLightOn = "menu/menu/option-light-on_main3",
 			--disabled = 1,
-			textColor	= R3D.RGBA( 200, 200, 170, 255 ),
 		},
 
 		Options =
 		{
 			text = TXT.Menu.Options,
 			desc = TXT.MenuDesc.Options,
-			x	 = 950,
-			y	 = 440,
+			x	 = -1,
+			y	 = 450,
 			action = "PainMenu:ActivateScreen(OptionsMenu)",
-			align = MenuAlign.Right,
 			sndLightOn = "menu/menu/option-light-on_main4",
-			textColor	= R3D.RGBA( 200, 200, 170, 255 ),
 		},
 		
 		Quit =
 		{
 			text = TXT.Menu.Quit,
 			desc = TXT.MenuDesc.Quit,
-			x	 = 950,
-			y	 = 500,
+			x	 = -1,
+			y	 = 530,
 			action = "PainMenu:AskYesNo( Languages.Texts[469], 'Exit()', 'PainMenu:ActivateScreen(MainMenu)' )",
 --			action = "PainMenu:AskYesNo( Languages.Texts[469], 'PainMenu:ActivateScreen(DemoEnd)', 'PainMenu:ActivateScreen(MainMenu)' )",
 			sndLightOn = "menu/menu/option-light-on_main5",
-			align = MenuAlign.Right,
-			textColor	= R3D.RGBA( 200, 200, 170, 255 ),
 		},
 		
 		BackButton =
 		{
 			text = TXT.Menu.Return,
 			desc = TXT.MenuDesc.Return,
-			textColor	= R3D.RGBA( 200, 200, 170, 255 ),
+			textColor	= R3D.RGBA( 255, 255, 255, 255 ),
 			x	 = 72,
 			y	 = 660,
 			fontBigSize = 36,
 			align = MenuAlign.Left,
 			inGameOnly = 1,
-			action = "PMENU.ResumeSounds(); PMENU.ReturnToGame(); PainMenu:ReloadBrightskins(); PainMenu:ReloadFOV();",
+			action = "PMENU.ResumeSounds(); PMENU.ReturnToGame(); PainMenu:ReloadBrightskins()",
 			useItemBG = false,
 		},
 		
@@ -111,7 +89,7 @@ MainMenu =
 		{
 			text = TXT.Menu.ReturnToMap,
 			desc = TXT.MenuDesc.ReturnToMap,
-			textColor	= R3D.RGBA( 200, 200, 170, 255 ),
+			textColor	= R3D.RGBA( 255, 255, 255, 255 ),
 			x	 = 952,
 			y	 = 660,
 			fontBigSize = 36,
@@ -192,8 +170,8 @@ MainMenu =
 			descColor	= R3D.RGB( 255, 255, 255 ),
 			sndAccept   = "menu/menu/apply-accept",
 			sndLightOn  = "menu/menu/back-light-on",
-			fontBigTex  = "../CPLGui/font_texturka_alpha",
-			fontSmallTex= "../CPLGui/font_texturka_alpha",
+			fontBigTex  = "HUD/font_texturka_alpha",
+			fontSmallTex= "HUD/font_texturka_alpha",
 		}
 ]]--
 	}

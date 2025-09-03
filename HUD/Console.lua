@@ -3,25 +3,8 @@ Console =
 {
 }
 --=======================================================================
-function Console:Cmd_SHOWTIMER(show)
-	show = tonumber(show)
-	if show == nil then
-		CONSOLE.AddMessage("enables timer display [1/0]")
-		return
-	end
-
-	if show == 1 then 
-	Hud._showTimer = true 
-	Cfg.ShowTimer = true
-	end
-	if show == 0 then 
-	Hud._showTimer = false 
-	Cfg.ShowTimer = false
-	end
-end
---=======================================================================
 function Console:Cmd_SHOWWEAPON(enable)    
-   enable = tonumber(enable)    
+    enable = tonumber(enable)    
     if enable == nil then 
         CONSOLE.AddMessage("showweapon 0/1  (disables/enables weapon rendering)") 
     end            
@@ -1553,14 +1536,8 @@ function Console:Cmd_SHOWFPS(show)
 		return
 	end
 
-	if show == 1 then 
-	Hud._showFPS = true 
-	Cfg.ShowFPS = true
-	end
-	if show == 0 then 
-	Hud._showFPS = false 
-	Cfg.ShowFPS = false
-	end
+	if show == 1 then Hud._showFPS = true end
+	if show == 0 then Hud._showFPS = false end
 end
 --=======================================================================
 --[[
@@ -1595,9 +1572,8 @@ function Console:Cmd_DIDELTASCALE(scale)
 end
 ]]--
 --=======================================================================
-function Console:OnCommand(cmd)
+function Console:OnCommand(cmd)    
     local exist = false
-    local dontshowerror = false -- cubik's variable
     cmd = Trim(cmd)
     if cmd == "" then return end
     local i = string.find(cmd," ",1,true)
@@ -1606,11 +1582,7 @@ function Console:OnCommand(cmd)
         local func = string.sub(cmd,1,i-1)
         func = string.upper(func)
         if Console["Cmd_"..func] then
-        --dontshowerror = true
-        -- cubik: still testing, disables most of the commands
-        --if func == "MAP" or func == "RELOADMAP" or func == "TEAM" or func == "SPECTATOR" or func == "READY" or func == "NOTREADY" or func == "BREAK" or func == "KICK" or func == "BANKICK" or func == "KICKID" or func == "BANKICKID" or func == "CALLVOTE" or func == "VOTE" or func == "DISCONNECT" or func == "RECONNECT" or func == "CONNECT" or func == "QUIT" or func == "DEMOPLAY" or func == "DEMOSTOP" or func == "DEMORECORD" then
-		------------------------------------------------------
-        	local params = string.sub(cmd,i+1)
+            local params = string.sub(cmd,i+1)
 
 			local semicolon = string.find(params,";")
 			if semicolon and func ~= "BIND" then
@@ -1635,22 +1607,16 @@ function Console:OnCommand(cmd)
 			end
             Cfg:Save()
             return
-        ------------------------------------------------------
-        --else
-        --	CONSOLE.AddMessage("This command is disabled.")
-        --end
-        -- cubik: ends here
         end
     end
-    -- I added a check for this, dunno why it didnt work without :/
-    --if dontshowerror == false then
-    	if Game.GMode == GModes.SingleGame then
-    		CONSOLE.AddMessage("Unknown command: ".. cmd)
-		else        
-        	cmd = string.sub(cmd,1,200)    
-        	Game.SayToAll(NET.GetClientID(), cmd) 
-    	end
-    --end
+    
+    if Game.GMode == GModes.SingleGame then
+        CONSOLE.AddMessage("Unknown command: ".. cmd)
+    else        
+        cmd = string.sub(cmd,1,200)    
+        Game.SayToAll(NET.GetClientID(), cmd) 
+    end
+    
 end
 --=======================================================================
 function Console:OnPrompt(txt)

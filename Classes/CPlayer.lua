@@ -1565,15 +1565,6 @@ function CPlayer:Client_OnDamage(entity,health,armor,attack_type,damage,killerID
             end
         end
     end
-    
-    -- cubik: Hitsounds --
-    if Player and Player.ClientID == killerID and (player == nil or player ~= Player) then
-
-        local hstype = "../CPLGui/hitsound"
-
-        PlaySound2D(hstype,100,0,1)
-    end
-	-- cubik: Hitsounds end --
 
     if (not player or Player ~= player) and attack_type == AttackTypes.Lava then
 		local x,y,z = ENTITY.GetPosition(entity)
@@ -1728,13 +1719,6 @@ end
 --============================================================================
 -- [NET - SERVER & ALL CLIENTS]
 function CPlayer:Client_OnDeath(deadID,killerID,attack_type,gib,frags,damage)
-		
-	-- cubik: Killsound --
-	if Player and Player.ClientID == killerID and deadID ~= Player.ClientID then
-        local kstype = "../CPLGui/killsound"
-        PlaySound2D(kstype,100,0,1)
-	end
-	-- cubik: Killsound end --
 
     Game:Print("Client_OnDeath")
     

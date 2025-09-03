@@ -64,24 +64,8 @@ Languages.English =
     None = Languages.Texts[6],
     GameOver = Languages.Texts[7],
 
-   Menu = 
+    Menu = 
     {
-        CPL		=	Languages.Texts[900],
-        CPLFov = Languages.Texts[902],
-        CPLMaxFps = Languages.Texts[904],
-        CPLText = Languages.Texts[906],
-        CPLShowTimer = Languages.Texts[907],
-        CPLShowFPS = Languages.Texts[909],
-        CPLBrightskinEnemy = Languages.Texts[911],
-        CPLBrightskinRed = Languages.Texts[913],
-        CPLBrightskinGreen = Languages.Texts[914],
-        CPLBrightskinBlue = Languages.Texts[915],
-        CPLBrightskinWhite = Languages.Texts[916],
-        CPLBrightskinTeam = Languages.Texts[917],
-        CPLFixedColors = Languages.Texts[919],
-	CPLRight = Languages.Texts[921],
-        CPLLeft = Languages.Texts[922],
-	CPLCenter = Languages.Texts[923],
         SignAPact         = Languages.Texts[10],
         LoadGame          = Languages.Texts[11],
         Multiplayer       = Languages.Texts[12],
@@ -174,7 +158,6 @@ Languages.English =
 		Up                = Languages.Texts[74],
 		Down              = Languages.Texts[75],
 
-		Fov		  = Languages.Texts[999],
 		HeadBob           = Languages.Texts[631],
 		HUDTransparency   = Languages.Texts[76],
 		HUDSize           = Languages.Texts[77],
@@ -369,16 +352,7 @@ Languages.English =
 
     MenuDesc =
     {
-		
-        CPL		=	Languages.Texts[901],       
-        CPLFov = Languages.Texts[903],
-        CPLMaxFps = Languages.Texts[905],
-        CPLShowTimer = Languages.Texts[908],
-        CPLShowFPS = Languages.Texts[910],
-        CPLBrightskinEnemy = Languages.Texts[912],
-        CPLBrightskinTeam = Languages.Texts[918],
-        CPLFixedColors = Languages.Texts[920],
-        Back              = Languages.Texts[189],
+		Back              = Languages.Texts[189],
 		Apply             = Languages.Texts[190],
 
 		SignAPact         = Languages.Texts[191],
@@ -417,7 +391,6 @@ Languages.English =
 		MouseSensitivity  = Languages.Texts[211],
 		WheelSensitivity  = Languages.Texts[212],
 
-		Fov		  = Languages.Texts[999],
 		HeadBob           = Languages.Texts[631],
 		HUDTransparency   = Languages.Texts[213],
 		HUDSize           = Languages.Texts[214],

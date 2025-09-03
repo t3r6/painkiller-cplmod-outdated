@@ -350,17 +350,6 @@ end
 -- [ENGINE - COMMON]  
 function Game:OnMultiplayerCommonTick(delta)    
 
-	-- overtime script, thx yar
-	if Game:IsServer() and MPCfg.GameMode == "Team Deathmatch" then
-		if (MPCfg.TimeLimit*60 - Game._TimeLimitOut) < 1 then
-			if Game._team1Score == Game._team2Score then
-			Game.SetFragAndTimeLimit(Cfg.FragLimit,MPCfg.TimeLimit + 2,Game._TimeLimitOut)
-			Game.ConsoleMessageAll("Overtime: 2 minutes")			
-			end
-		end
-	end
-	-- overtime script ends
-
     if MPCfg.GameState ~= GameStates.Playing then return end
     
     -- time out
@@ -1027,27 +1016,11 @@ Network:RegisterMethod("Game.PlayerRespawnConfirmation", NCallOn.ServerAndAllCli
 function Game:BrightSkin(entity, enable, team)
     if enable and MPCfg.AllowBrightskins then
 		local color
-		
-		
-        if (MPCfg.GameMode == "Team Deathmatch" and Cfg.Team == team) or (Player and entity == Player._Entity) then
-		    color = Color:New(0,0,255)
-            -- NEW BIT
-            if(Cfg.BrightskinTeam == "White")then color = Color:New(255,255,255) end
-            if(Cfg.BrightskinTeam == "Red")then color = Color:New(255,0,0) end
-            if(Cfg.BrightskinTeam == "Blue")then color = Color:New(0,0,255) end
-            if(Cfg.BrightskinTeam == "Green")then color = Color:New(0,255,0) end          
-            -- END OF NEW BIT
-        else
-            color = Color:New(255,0,0)
-            -- NEW BIT
-            if(Cfg.BrightskinEnemy == "White")then color = Color:New(255,255,255) end
-            if(Cfg.BrightskinEnemy == "Red")then color = Color:New(255,0,0) end
-            if(Cfg.BrightskinEnemy == "Blue")then color = Color:New(0,0,255) end
-            if(Cfg.BrightskinEnemy == "Green")then color = Color:New(0,255,0) end
-            -- END OF NEW BIT
-        end
-        
-        
+		if (MPCfg.GameMode == "Team Deathmatch" and Cfg.Team == team) or (Player and entity == Player._Entity) then
+			color = Color:New(255,255,255)
+		else
+			color = Color:New(255,0,0)
+		end
         MDL.SetMeshLighting(entity,"*",false,color.R,color.G,color.B)
         if not PMENU.Active() then
 			MATERIAL.Replace("models/mp-model-fallenangel/mpplayer1texture1","models/mp-model-fallenangel/mpplayer1texture1_brightskin")

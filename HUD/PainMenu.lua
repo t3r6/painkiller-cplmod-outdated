@@ -13,12 +13,12 @@ BackButton =
 	fontBigSize = 36,
 	align		= MenuAlign.Left,
 	useItemBG	= false,
-	textColor	= R3D.RGBA( 200, 200, 170, 255 ),
-	descColor	= R3D.RGB( 200, 200, 170 ),
+	textColor	= R3D.RGBA( 255, 255, 255, 255 ),
+	descColor	= R3D.RGB( 255, 255, 255 ),
 	sndAccept   = "menu/menu/back-accept",
 	sndLightOn  = "menu/menu/back-light-on",
-	fontBigTex  = "../CPLGui/font_texturka_alpha",
-	fontSmallTex= "../CPLGui/font_texturka_alpha",
+	fontBigTex  = "HUD/font_texturka_alpha",
+	fontSmallTex= "HUD/font_texturka_alpha",
 }
 
 ApplyButton =
@@ -30,18 +30,15 @@ ApplyButton =
 	fontBigSize = 36,
 	align		= MenuAlign.Right,
 	useItemBG	= false,
-	textColor	= R3D.RGBA( 200, 200, 170, 255 ),
-	descColor	= R3D.RGB( 200, 200, 170 ),
+	textColor	= R3D.RGBA( 255, 255, 255, 255 ),
+	descColor	= R3D.RGB( 255, 255, 255 ),
 	sndAccept   = "menu/menu/apply-accept",
 	sndLightOn  = "menu/menu/back-light-on",
-	fontBigTex  = "../CPLGui/font_texturka_alpha",
-	fontSmallTex= "../CPLGui/font_texturka_alpha",
+	fontBigTex  = "HUD/font_texturka_alpha",
+	fontSmallTex= "HUD/font_texturka_alpha",
 }
 
 -- Menu screens
-
-DoFile(path.."HUD/Menu/Options/CPLGui.lua") -- Load CPL GUI
-DoFile(path.."HUD/Menu/CPLModCredits.lua")
 
 DoFile(path.."HUD/Menu/Dialogs.lua")
 DoFile(path.."HUD/Menu/MainMenu.lua")
@@ -93,17 +90,17 @@ PainMenu =
 
 	-- Colors
 --	textColor	= R3D.RGBA( 66, 3, 3, 200 ),
-	textColor	= R3D.RGBA( 200, 200, 170, 255 ),
+	textColor	= R3D.RGBA( 255, 186, 122, 255 ),
 	disabledColor = R3D.RGBA( 155, 86, 22, 255 ),
 	underMouseColor = R3D.RGBA( 166, 3, 3, 255 ),
-	descColor	= R3D.RGB( 200, 200, 170 ),
+	descColor	= R3D.RGB( 255, 186, 122 ),
 
 	itemsFadeLength = 15,
 	itemsDrawShadow = true,
 
 --	background	= "../Data/Movies/menu.avi",
 --	bgType		= MenuBackgroundTypes.Movie,
-	background	= "../cplgui/menu",
+	background	= "HUD/Menu",
 	bgType		= MenuBackgroundTypes.Image,
 
 	sndAccept   = "menu/menu/option-accept",
@@ -1927,7 +1924,6 @@ function PainMenu:ApplyVideoSettings()
 		WORLD.SetupFog(f.Mode,f.Start * (Cfg.ClipPlane+100)/200,f.End * (Cfg.ClipPlane+100)/200,f.Density,f.Color:Compose())
 	end
 	HUD.SetTransparency( Cfg.HUDTransparency )
-        R3D.SetCameraFOV( Cfg.FOV )
 	WORLD.SetDrawDynLights( Cfg.DynamicLights )
 	R3D.SetTexFiltering()
 --	INP.SetUseDInput(true)
@@ -2517,11 +2513,6 @@ function PainMenu:ReleasePlayerModel( name )
 
 end
 
-function PainMenu:ReloadFOV()
-    PainMenu.cameraFOV = Cfg.FOV    
-    R3D.SetCameraFOV(Cfg.FOV)
-end
-
 function PainMenu:ReloadBrightskins()
 	if Game.GMode == GModes.SingleGame then return end
 	for i,o in Game.PlayerStats do
@@ -2627,7 +2618,7 @@ function PainMenu_PrintGameVersion()
     end
     local tw = HUD.GetTextWidth(ver)
     HUD.PrintXY(w-tw-54*w/1024,54*h/768,ver,"timesbd",0,0,0,16)
-    HUD.PrintXY(w-tw-53*w/1024,53*h/768,ver,"timesbd",200,200,170,16)
+    HUD.PrintXY(w-tw-53*w/1024,53*h/768,ver,"timesbd",255,186,122,16)
 end
 
 function PainMenu:SignAPact(mode)

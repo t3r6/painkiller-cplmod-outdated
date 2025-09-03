@@ -1,31 +1,5 @@
 iso-8859-1	# encoding - use cp1250 for Windows Central European
 
-# CPL GUI
-900: CPL GUI
-901: Extra multiplayer tweaking
-902: FOV
-903: Set your FOV
-904: Max FPS
-905: Maximum Framerate
-906: Remember to apply all your changes prior to joining the server!
-907: Show Timer
-908: Show/Hide ingame timer
-909: Show FPS
-910: Show your framerate ingame
-911: Enemy Color
-912: Color of your enemy
-913: Red
-914: Green
-915: Blue
-916: White
-917: Team Color
-918: Color of your team
-919: Fixed Colors
-920: If enabled, Enemy Color refers to the Blue Team and Team Color to the Red Team
-921: Right
-922: Left
-923: Center
-
 # globals
 1: Yes
 2: No
@@ -132,7 +106,6 @@ iso-8859-1	# encoding - use cp1250 for Windows Central European
 83: Red
 84: Green
 85: Blue
-999: Fov
 
 # sound config
 86: Master volume

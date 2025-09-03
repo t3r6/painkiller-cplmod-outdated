@@ -1,638 +1,611 @@
-iso-8859-1	# encoding - use cp1250 for Windows Central European
-
-# CPL GUI
-900: CPL GUI
-901: Extra multiplayer tweaking
-902: FOV
-903: Set your FOV
-904: Max FPS
-905: Maximum Framerate
-906: Remember to apply all your changes prior to joining the server!
-907: Show Timer
-908: Show/Hide ingame timer
-909: Show FPS
-910: Show your framerate ingame
-911: Enemy Color
-912: Color of your enemy
-913: Red
-914: Green
-915: Blue
-916: White
-917: Team Color
-918: Color of your team
-919: Fixed Colors
-920: If enabled, Enemy Color refers to the Blue Team and Team Color to the Red Team
-921: Right
-922: Left
-923: Center
+cp1251	# encoding - use cp1250 for Windows Central European
 
 # globals
-1: Yes
-2: No
+1: Да
+2: Нет
 3: OK
-4: On
-5: Off
-6: None
-7: Game Over
+4: Вкл
+5: Откл
+6: Нет
+7: Игра окончена
 
 # menu items
 
-8: Back
-9: Apply
+8: Назад
+9: Применить
 
 # main menu
-10: Sign the Pact
-11: Load/Save
-12: Multiplayer
-13: Options
-14: Secrets
-15: Return
-16: Quit
-17: Are you sure?
+10: Начать игру
+11: Загр./Сохр.
+12: Сетевая игра
+13: Настройки
+14: Секреты
+15: Назад
+16: Выход
+17: Вы уверены?
 
 # difficulty level
-18: Select difficulty level
-19: Daydream
-20: Insomnia
-21: Nightmare
-22: Trauma
+18: Уровень сложности
+19: Дрема
+20: Бессонница
+21: Кошмар
+22: Безумие
 
 # options menu
-23: Controls
+23: Управление
 24: HUD
-25: Sound
-26: Video
-27: Advanced Video
+25: Звук
+26: Графика
+27: Дополнительно
 
 # controls config
 
-28: Weapons
-29: Action
-30: Primary
-31: Alternative
+28: Оружие
+29: Команда
+30: Основное
+31: Альтернативное
 
 # keys
-32: Move forward
-33: Move backward
-34: Strafe left
-35: Strafe right
-36: Jump
-37: Fire
-38: Alternative Fire
-39: Next Weapon
-40: Previous Weapon
-41: Weapon 1
-42: Weapon 2
-43: Weapon 3
-44: Weapon 4
-45: Weapon 5
-46: BulletTime
-47: Pause
-48: Screenshot
-49: Menu
-50: Scoreboard
-51: Say to all
-52: Say to team
-53: Rocket Jump
-54: Forward Rocket Jump
-55: Fire Switch
-56: Fire Switch Toggle
-57: Select Best Explosive
-58: Select Best Non-Explosive
-59: Select Best Custom
-60: Fire Best Explosive
-61: Fire Best Non-Explosive
-62: Fire Best Custom
+32: Вперед
+33: Назад
+34: Шаг влево
+35: Шаг вправо
+36: Прыжок
+37: Огонь
+38: Альт. огонь
+39: След. оружие
+40: Пред. оружие
+41: Оружие 1
+42: Оружие 2
+43: Оружие 3
+44: Оружие 4
+45: Оружие 5
+46: Рапид
+47: Пауза
+48: Скриншот
+49: Меню
+50: Результаты
+51: Сказать всем
+52: Сказать команде
+53: 'Рокет-джамп'
+54: 'Рокет-джамп' вперед
+55: Переключение огня
+56: Переключатель огня
+57: Выбрать лучшее разрывное оружие
+58: Выбрать лучшее пулевое оружие
+59: Выбрать лучшее особое оружие
+60: Стрелять из лучшего разрывного оружия
+61: Стрелять из лучшего пулевого оружия
+62: Стрелять из лучшего особого оружия
 
 # mouse options
-63: Invert Mouse
-64: Smooth Mouse
-65: Mouse sensitivity
-66: Wheel sensitivity
+63: Инверсия мыши
+64: Плавн. движения
+65: Чувст. мыши
+66: Чувст. колесика
 
 # weapons config
-67: Secondary
-68: Switch
-69: Pickup
-70: Explosives
-71: Non-Explosives
-72: Auto change weapon
-73: Custom
-74: Up
-75: Down
+67: Вспомогательное
+68: Перекл.
+69: Подобрать
+70: Разрыв. оружие
+71: Пулевое оружие
+72: Авто-смена оружия
+73: Особое оружие
+74: Вверх
+75: Вниз
 
 # HUD config
-76: HUD Opacity
-77: HUD Size
-78: Small
-79: Normal
-80: Large
-81: Crosshair
-82: Opacity
-83: Red
-84: Green
-85: Blue
-999: Fov
+76: Прозр. HUD 
+77: Размер HUD
+78: Маленький
+79: Нормальный
+80: Большой
+81: Перекрестье
+82: Прозрачность
+83: Красное
+84: Зеленое 
+85: Синее
 
 # sound config
-86: Master volume
-87: Music volume
-88: Sound volume
-89: Reverse stereo
-90: Speakers setup
-91: 3D Sound Provider
-92: Two Speakers
-93: Headphones
-94: Surround
-95: Four Speakers
-96: Five-One
-97: Seven-One
+86: Громкость
+87: Музыка
+88: Эффекты
+89: Поменять каналы
+90: Колонки
+91: 3D звук
+92: 2 колонки
+93: Наушники
+94: Окружение
+95: 4 колонки
+96: Система 5.1
+97: Система 7.1
 
 # video config
-98: Resolution
-99: Texture quality
-100: Full Screen
-101: Gamma
-102: Brightness
-103: Contrast
-104: Very Low
-105: Low
-106: Medium
-107: High
-108: Architecture
-109: Characters
-110: Skies
+98: Разрешение
+99: Качество текстур
+100: Полный экран
+101: Гамма
+102: Яркость
+103: Контраст
+104: Минимум
+105: Низко
+106: Средне
+107: Высоко
+108: Строения
+109: Персонажи
+110: Небо
 
 # advanced video config
-111: Character shadows
-112: Weather effects
-113: Sky
-114: View weapon
-115: Weapon specular
-116: Weapon normal map
-117: Texture filtering
-118: Multisampling
-119: Decals stay
-120: Dynamic lights
-121: Projectors
-122: Coronas
-123: Decals
-124: Detail Textures
-125: Bilinear
-126: Trilinear
-127: Anisotropic
+111: Тени
+112: Погодные эффекты
+113: Небо
+114: Показ. оружие
+115: Хромир. оружие
+116: Реалист. оружие
+117: Фильтр. текстур
+118: Сглаживание
+119: Исчезн. следов
+120: Динам. освещение
+121: Прожекторы
+122: Короны
+123: Следы выстрелов
+124: Детал. текстуры
+125: Билинейн.
+126: Трилинейн.
+127: Анизотропн.
 
 # multiplayer menu
 
-128: Password
-129: Join Game
-130: Start Game
-131: Player Settings
+128: Пароль
+129: Присоединиться
+130: Создать игру
+131: Настройки
 
 # join game menu
-132: Internet
+132: Онлайн
 133: LAN
-134: Favorites
-135: Add To Favorites
-136: Remove From Favorites
-137: Refresh
-138: Stop
-139: Join
-140: Server Name
-141: Servers
-142: Players
-143: Map
-144: Game
-145: Ping
-146: Enter IP
-147: Couldn't find a server
-148: Click to select
-149: Updating server list
-150: Update finished
-151: [NONE]
-152: [NO MAP]
-153: Unknown
+134: Избранн.
+135: Доб. в Избранное
+136: Удалить из Избр.
+137: Обновить
+138: Стоп
+139: Присоединиться
+140: Сервер
+141: Серверы
+142: Игроки
+143: Карта
+144: Игра
+145: Пинг
+146: Введите IP
+147: Серверы не найдены
+148: Выберите
+149: Обновление списка 
+150: Обновление завершено
+151: [НЕТ]
+152: [НЕТ]
+153: Неизвестно
 
 # start game menu
-154: Server Password
-155: Server port
-156: Mode
-157: Free For All
-158: Team Deathmatch
-159: Voosh
-160: The Light Bearer
-161: People Can Fly
-162: Max players
-163: Max spectators
-164: Frag limit
-165: Time limit
-166: Public server
-167: Team damage
-168: Weapons stay
-169: Powerups
-170: Powerup Drop
-171: Allow Bunnyhopping
-172: Allow Brightskins
-173: Allow Forward Rocket Jump
-174: Brightskin Team
-175: Brightskin Enemy
-176: General
-177: Advanced
-178: Start
-179: Add
-180: Add all
-181: Remove
-182: Remove all
+154: Пароль
+155: Порт
+156: Режим
+157: Поединок
+158: Командный поединок
+159: Битва на равных
+160: Несущий Свет
+161: Люди умеют летать
+162: Макс. игроков
+163: Макс. зрителей
+164: Лимит фрагов
+165: Лимит времени
+166: Публичный сервер
+167: Командн. поврежд.
+168: Оставлять оружие
+169: Бонусы
+170: Оставлять бонусы
+171: Разрешить 'заячьи прыжки'
+172: Разрешить выделение команд
+173: Разрешить 'рокет-джампы'
+174: Выделенная команда
+175: Выделенный враг
+176: Общее
+177: Дополн.
+178: Начать
+179: Добавить
+180: Добавить все
+181: Убрать
+182: Убрать все
 
 # player settings menu
-183: Name
-184: Team
-185: Connection speed
-186: CD key
-187: Delete
-188: Enter
+183: Имя
+184: Команда
+185: Соединение
+186: CD-key
+187: Удалить
+188: Ввод
 
 # menu items' descriptions
 
-189: Return to the previous screen
-190: Apply settings and return to the previous screen
+189: Вернуться на предыдущий экран
+190: Сохранить изменения и вернуться на предыдущий экран
 
 # main menu
-191: Start new single player game
-192: Load a previously saved game or Save your current game
-193: Play the game on the Internet or start your own multiplayer server
-194: Configure controls, audio, video and other settings of the game
-195: Check out how many game secrets you have already discovered
-196: Return to the game
-197: Immediately exit the game
+191: Начать одиночную игру
+192: Сохранить игру или загрузить сохраненную ранее
+193: Играть через Интернет или по локальной сети
+194: Настройки управления, графики и звука
+195: Просмотр количества найденных секретов
+196: Вернуться в игру
+197: Выйти из игры
 
 # difficulty modes
-198: Extremely easy mode for beginners
-199: Recommended standard difficulty
-200: Hard mode for advanced players
-201: Painkiller's true story
+198: Очень легкий уровень, для новичков
+199: Стандартный уровень сложности
+200: Сложный уровень, для опытных игроков
+201: Самый высокий уровень сложности
 
 # options menu
-202: Configure game controls
-203: Configure HUD
-204: Configure sound and music
-205: Configure graphic options
-206: Additional settings for advanced users
+202: Настройка управления
+203: Настройка HUD
+204: Настройка звука
+205: Настройка графики
+206: Дополнительные настройки - для опытных пользователей
 
 # controls config
 
-207: Go to weapon configuration screen
-208: Left-click on the key to change, then press the new key/button
+207: Экран конфигурации оружия
+208: Выберите клавишу, которую хотите заменить, затем нажмите новую клавишу
 
 # mouse options
-209: Flight simulator style mouse control
-210: Eliminate mouse jerkiness
-211: Set your mouse sensitivity
-212: Set your mouse wheel sensitivity
+209: Инверсия мыши в стиле авиасимуляторов
+210: Убрать рывки мыши
+211: Установить чувствительность мыши
+212: Установить чувствительность колесика мыши
 
 # HUD config
-213: Set the HUD opacity
-214: Set the HUD size
-215: Choose your crosshair
-216: Choose your crosshair's opacity
-217: Choose your crosshair's color
+213: Прозрачность HUD
+214: Размер HUD
+215: Вид перекрестья
+216: Прозрачность перекрестья
+217: Цвет перекрестья
 
 # weapons config
-218: Automatically change weapon
+218: Автоматически переключать оружие
 
 # sound config
-219: Set the main volume
-220: Set the music volume
-221: Set the sound effects volume
-222: Reverse stereo
-223: Choose your speaker setup
-224: Choose your 3D sound provider
+219: Общий уровень громкости
+220: Громкость музыки
+221: Громкость звуковых эффектов
+222: Поменять местами правый и левый каналы 
+223: Конфигурация колонок
+224: Устройство вывода 3D-звука
 
 # video config
-225: The higher resolutions, the faster PC and 3D card is required
-226: Set to low if you have performance issues
-227: Uncheck if you want to run the game in window mode
-228: Set gamma
-229: Set brightness
-230: Set contrast
-231: Change weapon texture quality,
-232: Change architectural texture quality,
-233: Change enemy texture quality,
-234: Change sky texture quality,
+225: Разрешение экрана
+226: Если у вас проблемы с быстродействием, установите более низкое значение
+227: Отключите, если хотите играть в окне
+228: Гамма
+229: Яркость
+230: Контраст
+231: Качество текстур оружия
+232: Качество текстур строений
+233: Качество текстур монстров
+234: Качество текстур неба
 
 # advanced video config
-235: Set to off if you have performance issues
-236: Set to bilinear if you have performance issues
-237: Set the multisampling level
-238: Set the time after which decals disappear
+235: Если у вас проблемы с быстродействием, отключите опцию
+236: Если у вас проблемы с быстродействием, установите на билинейн.
+237: Уровень сглаживания
+238: Время отображения следов от выстрелов
 
 # multiplayer menu
 
-239: Enter server password
-240: Search for multiplayer games on the LAN/Internet and join them
-241: Start your own multiplayer LAN/Internet server
-242: Configure multiplayer settings
+239: Пароль сервера
+240: Найти сетевую игру и присоединиться к ней
+241: Создать свою сетевую игру
+242: Настроить параметры сетевой игры
 
 # join game menu
-243: Search for multiplayer games on the Internet and join them
-244: Search for multiplayer games on your local network and join them
-245: List of your favorite servers
-246: Add selected server to favorites
-247: Remove selected server from favorites
-248: Refresh the list of servers
-249: Stop refreshing the servers list
-250: Join the server and play
-251: Enter server IP
+243: Искать сетевые игры в Интернете и вступить в игру
+244: Искать сетевые игры в локальной сети и вступить в игру
+245: Список избранных серверов
+246: Добавление выбранного сервера в Избранное
+247: Удаление выбранного сервера из Избранного.
+248: Обновление списка серверов
+249: Остановка обновления списка серверов
+250: Соединиться с сервером и начать игру
+251: Ввод IP сервера
 
 # start game menu
-252: You can name your server here
-253: You can set the password to limit server access
-254: Change server port
-255: Select game mode
-256: Set maximum number of players
-257: Set maximum number of spectators
-258: Number of frags required to end the map, 0 = disabled
-259: Maximum time between map changes, 0 = disabled
-260: Advertise your server on the Internet
-261: Turn friendly fire on/off
-262: Check if weapons should not disappear after pickup
-263: Enable or disable the powerups on the map
-264: Check if the powerup drops when owner is fragged
-265: Check to allow bunnyhopping
-266: Check to allow bright skins
-267: Check to allow forward rocket jump
-268: Select team brightskin color
-269: Select enemies brightskin color
-270: General settings
-271: Advanced settings
-272: Start the server
+252: Здесь вы можете ввести название сервера
+253: Вы можете установить пароль на ограничение доступа к серверу
+254: Изменение порта сервера
+255: Выберите режим игры
+256: Задайте максимальное число игроков
+257: Задайте максимальное число зрителей
+258: Количество фрагов для завершения карты, 0 = откл.
+259: Максимальное время между изменением карты, 0 = откл.
+260: Реклама вашего сервера в Интернете
+261: Огонь по своим вкл./откл.
+262: Включите опцию, чтобы оружие не исчезало после того, как его подобрали
+263: Включение/отключение бонусов на карте
+264: Включите, чтобы после гибели игрока оставался его бонус
+265: Включите, чтобы разрешить 'заячьи прыжки'
+266: Включите, чтобы разрешить выделение команд
+267: Включите опцию, чтобы разрешить 'рокет-джампы'.
+268: Выберите цвет своей команды
+269: Выберите цвет команды противника
+270: Общие настройки
+271: Дополнительные установки
+272: Создать игру
 
 # list manipulation
-273: Move up
-274: Move down
-275: Add selected item
-276: Add all items
-277: Remove selected item
-278: Remove all items
+273: Вверх
+274: Вниз
+275: Добавить выбранный предмет
+276: Добавить все предметы
+277: Убрать выбранный предмет
+278: Убрать все предметы
 
 # player settings menu
-279: Enter your nickname
-280: Select the team for teamplay based games
-281: Select your connection speed
-282: Enter your CD key
+279: Введите имя
+280: Выберите команду для сетевых игр
+281: Выберите скорость соединения
+282: Введите CD-key
 
 # map
 
 # levels
-283: Cemetery
-284: Atrium Complex
-285: Catacombs
-286: Cathedral
-287: Enclave
-288: Prison
-289: Opera House
-290: Asylum
-291: Snowy bridge
-292: Town
-293: Swamp
-294: Train Station
-295: Abandoned Factory
-296: Military Base
-297: Ruins
-298: Castle
-299: The Palace
-300: Babel
-301: Forest
-302: Tower
-303: City On Water
-304: Docks
-305: Old Monastery
-306: Hell
+283: Кладбище
+284: Атриум
+285: Катакомбы
+286: Собор
+287: Анклав
+288: Тюрьма
+289: Опера
+290: Больница
+291: Заснеженный мост
+292: Город
+293: Болото
+294: Станция
+295: Заброшенная фабрика
+296: Военная база
+297: Руины
+298: Замок
+299: Дворец
+300: Башня
+301: Лес
+302: Оплот
+303: Город на воде
+304: Доки
+305: Монастырь
+306: Ад
 
 # stats
-307: Cards found
-308: Gold found
+307: Найдено карт
+308: Найдено золота
 
 # single-player stats
 
-309: YOUR SCORE
-310: Gameplay Time
-311: Monsters Killed
-312: Souls Collected
-313: Gold Found
-314: Holy Items Found
-315: Ammo Found
-316: Objects Destroyed
-317: Secrets Found
-318: Card unlocking status
-319: Status
-320: LOCKED
-321: UNLOCKED
+309: ВАШ СЧЕТ
+310: Время игры
+311: Убито монстров
+312: Поглощено душ
+313: Найдено золота
+314: Священные предметы
+315: Боеприпасы
+316: Уничтожено объектов
+317: Найдено секретов
+318: Статус карт
+319: Статус
+320: ЗАКРЫТА
+321: ОТКРЫТА
 
 # multi-player messages
 
-322: $PLAYER has entered the arena.
-323: $PLAYER chickened and left the arena.
-324: $KILLER violated $PLAYER with the shotgun.
-325: $KILLER ended $PLAYER's misery.
-326: $KILLER ventilated $PLAYER.
-327: $PLAYER hugged $KILLER's grenade.
-328: $PLAYER rode $KILLER's rocket.
-329: $PLAYER swallowed $KILLER's rocket.
-330: $KILLER crucified $PLAYER.
-331: $KILLER shredded $PLAYER.
-332: $KILLER skillfully telefragged $PLAYER.
-333: $PLAYER fought gravity and lost.
-334: $PLAYER has left the building.
-335: $PLAYER forgot which way the barrel goes.
-336: $PLAYER has proven that life is short.
-337: $PLAYER exploded.
+322: Демон $PLAYER зашел на арену.
+323: Демон $PLAYER струсил и покинул арену.
+324: $KILLER пристрелил из дробовика игрока по имени $PLAYER.
+325: $KILLER прекратил страдания игрока по имени $PLAYER.
+326: $KILLER разнес игрока по имени $PLAYER.
+327: $PLAYER подорвался на гранате игрока по имени $KILLER.
+328: $PLAYER прокатился на ракете игрока по имени $KILLER.
+329: $PLAYER проглотил ракету игрока по имени $KILLER.
+330: $KILLER распял игрока по имени $PLAYER.
+331: $KILLER разорвал на части игрока по имени $PLAYER.
+332: $KILLER умело телефрагнул игрока по имени $PLAYER.
+333: $PLAYER победил гравитацию и исчез.
+334: $PLAYER вышел из здания.
+335: $PLAYER заигрался с оружием.
+336: $PLAYER доказал, что жизнь коротка.
+337: $PLAYER взорвался.
 
 # cards
-338: Speed
-339: Dexterity
-340: Fury
-341: Rage
-342: Confusion
-343: Endurance
-344: Iron Will
-345: Haste
-346: Double Haste
-347: Triple Haste
-348: Time Bonus
-349: Double Time Bonus
-350: Soul Catcher
-351: Soul Keeper
-352: Soul Redeemer
-353: Dark Soul
-354: Blessing
-355: Vitality
-356: Replenish
-357: Greed
-358: Forgiveness
-359: Mercy
-360: Divine Intervention
-361: Last Breath
+338: Скорость
+339: Ловкость
+340: Ярость
+341: Гнев
+342: Замешательство
+343: Выносливость
+344: Железная воля
+345: Ускорение
+346: Двойное ускорение
+347: Тройное ускорение
+348: Бонус времени
+349: Двойной бонус времени
+350: Ловец душ
+351: Хранитель душ
+352: Спаситель душ
+353: Темная душа
+354: Благословение
+355: Энергия
+356: Пополнение
+357: Жадность
+358: Прощение
+359: Милость
+360: Божественн. вмешательство
+361: Последний вздох
 
 # cards descriptions
-362: Move faster
-363: Weapons reload 2x faster
-364: Deliver 2x more damage
-365: Deliver 4x more damage
-366: Confuse enemies
-367: Take only half of the damage
-368: Enemies can't hurt you
-369: The world moves 2x slower
-370: The world moves 4x slower
-371: The world moves 8x slower
-372: Golden Cards last\n10 seconds longer
-373: Golden Cards last\n20 seconds longer
-374: Leech souls from a distance
-375: Souls stay longer
-376: Souls provide more health
-377: Morph into demon form\nat every 50 souls
-378: Increase the initial\nhealth to 150
-379: Increase base health\ncapacity to 150
-380: Double the ammo in\nammo boxes
-381: Double the amount\nof hidden wealth
-382: You can use Golden Cards\ntwo times per level
-383: You can use Golden Cards\nthree times per level
-384: All Cards can be placed\nfor free
-385: Health regeneration when\nyou're dying
+362: Ускоренное движение
+363: Оружие перезаряжается\nв 2 раза быстрее
+364: Повреждения в 2 раза выше
+365: Повреждения в 4 раза выше
+366: Приводит врагов в\nзамешательство
+367: Уменьшает наносимые вам\nповреждения в 2 раза
+368: Неуязвимость
+369: Мир замедляется в 2 раза
+370: Мир замедляется в 4 раза
+371: Мир замедляется в 8 раза
+372: Временные карты действуют\nна 10 сек. дольше
+373: Временные карты действуют\nна 20 сек. дольше
+374: Позволяет поглощать души\nна расстоянии
+375: Души исчезают позже
+376: Души дают больше здоровья
+377: Превращает в демона через\nкаждые 50 душ
+378: Увеличивает начальное\nздоровье до 150
+379: Увеличивает максимальное\nздоровье до 150
+380: Удвоить боеприпасы в ящиках
+381: Удваивает количество\nспрятанных сокровищ
+382: Позволяет использовать врем.\nкарты 2 раза за уровень
+383: Позволяет использовать врем.\nкарты 3 раза за уровень
+384: Всеми картами можно\nвоспользоваться бесплатно
+385: Восстановление здоровья\nв критическом состоянии
 
 # multi-player stats
 
-386: Player
-387: Frags
-388: Kills
-389: Deaths
-390: Ping
-391: Time
-392: Packet loss
-393: Time left
+386: Игрок
+387: Фраги
+388: Убито
+389: Смерти
+390: Пинг
+391: Время
+392: Потер.пак.
+393: Ост. время
 
 # messages
-394: Press 'Enter' to continue.
-395: Press 'Fire' to continue.
+394: Нажмите 'Ввод'.
+395: Нажмите 'Огонь'.
 
 # black tarot card unlocking conditions
-396: Finish the level
-397: Destroy all objects
-398: Kill all monsters
-399: Find at least 500 gold
-400: Kill Necrogiant in less than 02:00
-401: Finish the level using only non-explosive weapons
-402: Collect at least 100 souls
-403: Finish the level using only Painkiller weapon
-404: Find every secret place
-405: Finish the level using stakes only
-406: Kill Swamp Thing in less than 04:00
-407: Don't collect a single soul
-408: Kill at least 30 enemies in Demon Morph mode
-409: Kill all monsters
-410: Kill Guardian in less than 01:20
-411: Find every Holy Item
-412: Finish the level without any armor
-413: Find all ammo
-414: Finish the level without using the Black Tarot
-415: Kill Alastor in less than 05:00
-416: Find every secret place
-417: Morph into demon at least 3 times
-418: Keep HP above 50
-419: Kill Lucifer
+396: Закончите уровень
+397: Уничтожьте все объекты
+398: Убейте всех монстров
+399: Найдите не менее 500 зол.
+400: Убейте Некрогиганта менее чем за 2 минуты
+401: Пройдите этот уровень, не используя разрывное оружие
+402: Соберите не менее 100 душ
+403: Пройдите уровень, используя только пэйнкиллер
+404: Найдите все секретные области
+405: Пройдите уровень, используя только колья
+406: Убейте Болотную тварь менее чем за 4 минуты
+407: Вы не должны собрать ни одной души
+408: Убейте не менее 30 противников в режиме Демона
+409: Убейте всех монстров
+410: Убейте Стражника менее чем за 1 мин. 20 сек.
+411: Найдите все священные предметы
+412: Пройдите уровень без брони
+413: Найдите все боеприпасы
+414: Пройдите уровень, не используя Черные карты таро
+415: Убейте Аластора менее чем за 5 минут
+416: Найдите все секретные области
+417: Превратитесь в демона не менее 3 раз
+418: Не дайте здоровью опуститься ниже 50
+419: Убейте Люцифера
 
 # main menu
-420: Resume Game
-421: Return to Map
+420: Продолжить игру
+421: Назад на карту
 
 # difficulty level
-422: Mode locked: Finish Nightmare to unlock
+422: Режим недоступен. Пройдите игру на уровне ‘Кошмар’
 
 # map
-423: Chapter
-424: Level
-425: Black Tarot not available in demo version
-426: Black Tarot inactive
-427: Select level
-428: Select chapter
-429: Go to Black Tarot
-430: Go to Main Menu
-431: Play level
-432: Black Tarot inactive when playing the level
-433: Black Tarot not available in Daydream mode
+423: Часть
+424: Уровень
+425: Черные карты таро недоступны в демо-версии
+426: Черные карты таро недоступны
+427: Выберите уровень
+428: Выберите главу
+429: К Черным картам таро 
+430: В главное меню
+431: Играть
+432: На этом уровне Черные карты таро недоступны
+433: Черные карты таро недоступны в режиме ‘Дрема’
 
 # black tarot
-434: Cost to place
-435: Withdrawal return
-436: Gold after withdrawal
-437: Click "Use Golden Cards" key during the level\nto unleash the power of your Golden Cards set.\nYou can use this set [x] time(s) per level.
-438: Effects of all Silver Cards placed here\nare immediate and last through the whole level.
-439: Not enough gold to place\nthe card.
-440: Your gold
-441: Gold required
+434: Стоимость 
+435: Стоимость возврата
+436: Золота после возврата
+437: Чтобы применить свой набор золотых карт,\nнажмите 'Использовать золотые карты’.\nВы можете использовать его [x] раз за уровень.
+438: Эффекты размещенных здесь серебряных карт\nдлятся на протяжении всего уровня.
+439: Недостаточно золота, чтобы\nположить карту.
+440: Ваше золото
+441: Треб. золото
 
 # sound options
-442: EAX Acoustics
-443: Check to enable special EAX effects
-444: Battle Music
-445: Ambient Music
-446: Set the battle music volume
-447: Set the ambient music volume
+442: Поддержка EAX
+443: Отметьте опцию, чтобы включить спецэффекты EAX
+444: Музыка (бой)
+445: Фон. музыка
+446: Настройка громкости музыки, звучащей во время боя
+447: Настройка громкости фоновой музыки
 
 # video options
-448: Particles detail
+448: Детали частиц
 
 # controls
-449: Use Golden Cards
-450: Flashlight
+449: Исп. Золотые карты
+450: Фонарь
 
 # game over
-451: Press 'Fire' to restart or 'Escape' to exit to menu.
+451: Нажмите 'Огонь', чтобы начать заново, или 'Escape', чтобы выйти в меню.
 
 # scoreboard
-452: Armors Found
-453: FAILED
+452: Найдено брони
+453: ПРОВАЛЕНО
 454: N/A
-455: You have
-456: unlocked a new
-457: Black Tarot card!
+455: Вы 
+456: получили новую 
+457: Черную карту таро!
 
 # weapons
-458: Pain
-459: Killer
-460: Shotgun
-461: Freezer
-462: Stakegun
-463: Grenade Launcher
-464: Rocket Launcher
-465: Chaingun
-466: Driver
-467: Electro
+458: Пэйн
+459: Киллер
+460: Дробовик
+461: Замораживатель
+462: Коломет
+463: Гранатомет
+464: Ракетная установка
+465: Пулемет
+466: Драйвер
+467: Электро
 
 # warnings
-468: Daydream mode is an extremely easy mode for beginners. In this mode you don't have the access to Black Tarot.\nAre you sure you want to select this mode?
-469: Are you sure?
-470: Do not show this warning again
+468: Режим ‘Дрема’ – очень легкая игра для новичков. В этом режиме у вас нет доступа к картам таро.\nВы уверены, что вы хотите выбрать этот режим игры?
+469: Вы уверены?
+470: Не выводить это предупреждение
 
-471: TEXTURE QUALITY
+471: КАЧЕСТВО ТЕКСТУР
 
-472: Exit To The Map
+472: Выход на карту
 
-473: Secret Area discovered!
+473: Найдена секр. область!
 
-474: Difficulty
+474: Сложность
 
 # create server
-475: Available maps
-476: Server maps
+475: Доступные карты
+476: Карты сервера
 
 # keys
-477: Unknown Key
-478: Cursor Up
-479: Cursor Down
-480: Cursor Left
-481: Cursor Right
-482: Space
+477: Неизв. клавиша
+478: Вверх
+479: Вниз
+480: Влево
+481: Вправо
+482: Пробел
 483: Tab
 484: Backspace
 485: Enter
@@ -646,324 +619,322 @@ iso-8859-1	# encoding - use cp1250 for Windows Central European
 493: Home
 494: Insert
 495: Delete
-496: Numpad 0
-497: Numpad 1
-498: Numpad 2
-499: Numpad 3
-500: Numpad 4
-501: Numpad 5
-502: Numpad 6
-503: Numpad 7
-504: Numpad 8
-505: Numpad 9
-506: Numpad *
-507: Numpad +
-508: Numpad -
-509: Numpad .
-510: Numpad /
+496: 0 (цифр. кл.)
+497: 1 (цифр. кл.)
+498: 2 (цифр. кл.)
+499: 3 (цифр. кл.)
+500: 4 (цифр. кл.)
+501: 5 (цифр. кл.)
+502: 6 (цифр. кл.)
+503: 7 (цифр. кл.)
+504: 8 (цифр. кл.)
+505: 9 (цифр. кл.)
+506: * (цифр. кл.)
+507: + (цифр. кл.)
+508: - (цифр. кл.)
+509: . (цифр. кл.)
+510: / (цифр. кл.)
 511: NumLock
 512: ScrollLock
-513: Left Shift
-514: Right Shift
-515: Left Alt
-516: Right Alt
-517: Left Menu
-518: Right Menu
-519: Far Right Menu
+513: Левый Shift
+514: Правый Shift
+515: Левый Alt
+516: Правый Alt
+517: Левая Menu
+518: Правая Menu
+519: Самая правая Menu
 520: Printscreen
 521: Caps Lock
-522: Numpad Enter
-523: Left Mouse Button
-524: Right Mouse Button
-525: Middle Mouse Button
-526: Mouse Wheel Forward
-527: Mouse Wheel Back
-528: Left Ctrl
-529: Right Ctrl
+522: Серый Enter
+523: Левая кн. мыши
+524: Правая кн. мыши
+525: Средняя кн. мыши
+526: Колесико вверх
+527: Колесико вниз
+528: Левый Ctrl
+529: Правый Ctrl
 
 # video options
-530: Low
-531: High
+530: Низко 
+531: Высоко
 
 # weapons config
-532: Pickup priority
-533: Custom 1
-534: Custom 2
-535: Select Best Custom 1
-536: Select Best Custom 2
-537: Fire Best Custom 1
-538: Fire Best Custom 2
+532: Очередность подбора
+533: Особое оружие 1
+534: Особое оружие 2
+535: Лучшее особое оружие 1
+536: Лучшее особое оружие 2
+537: Огонь (лучш. особое 1)
+538: Огонь (лучш. особое 2)
 
 # keys
-539: Quick Load
-540: Quick Save
+539: Быстрая загрузка
+540: Быстрое сохранение
 
 # messages keys
-541: Messages
-542: Configure multiplayer messages
-543: Key
-544: SA
-545: Message
+541: Сообщения
+542: Настроить сообщения сет. игры
+543: Клавиша
+544: СВ
+545: Сообщение
 
 # messages
-546: Get Quad!
-547: Our Quad!
-548: Our Quad Dead
-549: Enemy Quad!
-550: Enemy Quad Dead
-551: Get Invincibility!
-552: Our Invincibility!
-553: Enemy Invincibility!
-554: [custom message/taunt]
-555: [custom message/taunt]
-556: [custom message/taunt]
-557: [custom message/taunt]
-558: [custom message/taunt]
-559: [custom message/taunt]
-560: [custom message/taunt]
-561: [custom message/taunt]
-562: [custom message/taunt]
-563: [custom message/taunt]
+546: Захватите квад!
+547: Квад наш!
+548: Наш квад убит!
+549: Квад у противника!
+550: Квад противника убит!
+551: Завладейте непобедимостью!
+552: Непобедимость наша!
+553: Непобедимость у противника!
+554: [сообщение/отклик игрока]
+555: [сообщение/отклик игрока]
+556: [сообщение/отклик игрока]
+557: [сообщение/отклик игрока]
+558: [сообщение/отклик игрока]
+559: [сообщение/отклик игрока]
+560: [сообщение/отклик игрока]
+561: [сообщение/отклик игрока]
+562: [сообщение/отклик игрока]
+563: [сообщение/отклик игрока]
 
 # video options
-564: Graphics Settings
-565: Set overall graphics quality
-566: Custom
-567: Fastest
-568: Fast
-569: Standard
-570: Very High
-571: Insane
+564: Настройки графики
+565: Настроить общее качество графики
+566: По выбору
+567: Очень быстро
+568: Быстро
+569: Нормально
+570: Очень высоко
+571: Безумно высоко
 
-572: Check which messages you want to say to all players
-573: All players can see this message
-574: Only your team can see this message
+572: Выберите, какие сообщения вы хотите отправить всем игрокам
+573: Все игроки смогут просмотреть это сообщение
+574: Только ваша команда сможет видеть сообщение
 
-575: Clip plane
-576: Set clip plane
-577: Secret multiplayer model unlocked
-578: You are granted unlimited and free Golden Cards usage
+575: Видимость
+576: Настроить видимость
+577: Открыта секретная модель для сетевой игры
+578: Вы получаете неограниченное количество бесплатных золотых карт
 
 # multiplayer error messages
-579: Disconnected on timeout: %d ms
-580: GameSpy timeout error!!!\nDescription: %s
-581: NAT Negotiation: NN server acknowledged your connection request
-582: NAT Negotiation: direct negotiation with the other client has started
-583: NAT Negotiation: unknown negotiate state returned by GameSpy!! State: %d
-584: NAT Negotiation complete! Connecting to %s
-585: NAT Negotiation error: Partner did not register with the NAT Negotiation Server
-586: NAT Negotiation error: Unable to communicate with NAT Negotiation Server
-587: NAT Negotiation error: NAT Negotiation server indicated an unknown error condition
-588: NAT Negotiation succesfull!: Client connecting from %s
-589: NAT Negotiation: Received client cookie: %d
-590: Net Init Error: WSAStartup() failed!! Returned %d
-591: Net Init Error: Windows Sockets implementation too old!
-592: Net Init Error: tried to resolve given interface and failed!
-593: Net Init Error: gethostname() call failed!! Can't find this computer's name! Returned: %d
-594: Net Init Error: failed to resolve our IP with gethostbyname()!!
-595: Net Init Error: Couldn't open listening socket: %s
-596: Net Init Error: Couldn't make socket non-blocking: %s
-597: Net Init Error: Failed to bind socket on port %d
-598: Net Init Error: getsockname on bound socket failed!! Returned: %d
-599: GameSpy Init Error: a DNS lookup (for the master server) failed\nGameSpy inactive!
-600: GameSpy Init Error: no challenge was received from the master - either the master is down, or a firewall is blocking UDP\nGameSpy inactive!
-601: GameSpy Init Error: unknown error value given by GameSpy: %d\nGameSpy inactive!
-602: Net Error: Connection refused by server (port unreachable)
-603: Net Error: Given address does not reply
-604: Net Error: Connection closed from other side (probably other side is down right now)
-605: Net Info: Rejected connect from '%s': using early development client version!
-606: Net Info: Rejected connect from '%s': different client version: %s
-607: Net Info: Rejected connect from '%s': different client scripts
-608: Net Info: Rejected connect from '%s': it tried to answer a challenge I didn't issue
-609: Net Info: Rejected connect from '%s': too many clients trying to connect
-610: Net Info: Rejected connect from '%s': bad password given
-611: Net Info: Rejected connect from '%s': maximal number of clients achieved
-612: Net Info: Rejected connect from '%s': invalid challenge given
-613: Net Info: Rejected connect from '%s': invalid challenge response given
-614: Net Info: Rejected connect from '%s': GameSpy says it has a bad CD key
-615: Net Info: Rejected net open from '%s': it tried to do it without a prior connect
-616: Net Error: trying to connect to host that is not a Painkiller server!!
-617: Net Error: the server is version '%s', we are '%s'.\nCan't connect!! Please upgrade the game.
-618: Net Error: we have different scripts than the server, but the same game version.\nPlease upgrade or reinstall the game.
-619: Net Error: we gave bad password to passworded server!!
-620: Net Error: failed challenge authentication!! A hack job, perhaps?
-621: Network: server challenge timeout...reconnecting
-622: Net Error: No more players allowed on this server
-623: Net Error: the CD Key you entered is incorrect, or there's another player with the same CD Key presently on the Net!\nServer said: %s
-624: Net Error: the client tried to answer a challenge that the server didn't provide!\nServer said: %s
-625: Net Error: the client tried to issue a Net Open command without connecting first!\nServer said: %s
-626: Net Error: unknown error report received!!
-627: Net Error: Write: error in sendto(): %s
-628: Net Error: Read: error in recvfrom(): %s
-629: Net Error: Couldn't resolve address: %s
+579: Отключен после ожидания: %d мс
+580: Ошибка ожидания GameSpy!!!\nОписание: %s
+581: Взаимодействие через NAT: NN сервер принял запрос на соединение
+582: Взаимодействие через NAT: установлено прямое соединение с клиентом
+583: Взаимодействие через NAT: GameSpy сообщает о неизвестном состоянии соединения! Состояние: %d
+584: NAT соединение установлено! Соединяемся с %s
+585: Ошибка взаимодействия через NAT: партнер не зарегистрирован на сервере NAT
+586: Ошибка взаимодействия через NAT: ошибка взаимодействия с NAT сервером
+587: Ошибка взаимодействия через NAT: сервер NAT выдает неизвестную ошибку
+588: NAT соединение установлено!: Клиент соединяется с %s
+589: Взаимодействие через NAT: получен cookie клиента: %d
+590: Ошибка инициализации сети: ошибка WSAStartup()! Ответ - %d
+591: Ошибка инициализации сети: старая версия библиотеки winsock.dll!
+592: Ошибка инициализации сети: ошибка опознавания интерфейса!
+593: Ошибка инициализации сети: ошибка звонка gethostname()! Не найден компьютер с таким именем! Ответ: %d
+594: Ошибка инициализации сети: ошибка определения IP-адреса командой gethostbyname()!
+595: Ошибка инициализации сети: ошибка открытия сокета на прием: %s
+596: Ошибка инициализации сети: не удалось отменить блокировку сокета: %s
+597: Ошибка инициализации сети: не удалось назначить сокет на порт %d
+598: Ошибка инициализации сети: ошибка команды getsockname! Ответ: %d
+599: Ошибка инициализации GameSpy: ошибка поиска DNS (для главного сервера) \nGameSpy отключен!
+600: Ошибка инициализации GameSpy: от сервера не получен ответ - сервер отключен, либо файерволл блокирует UDP\nGameSpy отключен!
+601: Ошибка инициализации GameSpy: GameSpy выдает неизвестную ошибку: %d\nGameSpy отключен!
+602: Сетевая ошибка: соединение прервано сервером (порт недоступен)
+603: Сетевая ошибка: указанный адрес не отвечает
+604: Сетевая ошибка: соединение прервано другой стороной (возможно, другая сторона отключена)
+605: Сет. информация: Отказ в доступе от '%s': используется старая версия клиента!
+606: Сет. информация: Отказ в доступе от '%s': другая версия клиента: %s
+607: Сет. информация: Отказ в доступе от '%s': разные скрипты клиента
+608: Сет. информация: Отказ в доступе от '%s': попытка ответить на запрос, который не отправлялся
+609: Сет. информация: Отказ в доступе от '%s': пытается  соединиться слишком большое количество клиентов
+610: Сет. информация: Отказ в доступе от '%s': неверный пароль
+611: Сет. информация: Отказ в доступе от '%s': достигнут порог клиентов
+612: Сет. информация: Отказ в доступе от '%s': неверный запрос
+613: Сет. информация: Отказ в доступе от '%s': дан неверный ответ на запрос
+614: Сет. информация: Отказ в доступе от '%s': GameSpy сообщает о неверном CD-key
+615: Сетевая ошибка: запрещенная сеть открыта на '%s': попытка открыть без предварительной установки соединения
+616: Сетевая ошибка: попытка соединиться к хосту, который не является сервером Painkiller!
+617: Сетевая ошибка: сервер имеет версию '%s', мы -'%s'.\nСоединение невозможно! Обновите игру.
+618: Сетевая ошибка: версия наших скриптов отличается от версии скриптов сервера, но версии игры совпадают.\nОбновите игру или переустановите ее.
+619: Сетевая ошибка: мы отправили неверный пароль на защищенный сервер!
+620: Сетевая ошибка: ошибка аутентификации! Возможен взлом.
+621: Сеть: ошибка времени ожидания сервера... Повторное соединение
+622: Сетевая ошибка: достигнут порог игроков на сервере
+623: Сетевая ошибка: неверный CD-Key, либо в сети находится еще один пользователь с тем же CD-Key!\nОтвет сервера: %s
+624: Сетевая ошибка: клиент попытался ответить на запрос, который сервер не отправлял!\nОтвет сервера: %s
+625: Сетевая ошибка: клиент попытался отдать команду Net Open без предварительного соединения!\nОтвет сервера: %s
+626: Сетевая ошибка: получено сообщение о неизвестной ошибке!
+627: Сетевая ошибка: Запись: ошибка в sendto(): %s
+628: Сетевая ошибка: Чтение: ошибка в recvfrom(): %s
+629: Сетевая ошибка: не опознан адрес: %s
 
 # maps stats
-630: BEST SCORES
+630: РЕКОРДЫ
 
-631: HeadBob
-632: Set HeadBob
-633: Ambient sounds
-634: Enable/disable ambient sounds
+631: Покачивание
+632: Настроить покачивание
+633: Фоновые звуки
+634: Вкл./выкл. фоновые звуки
 
-635: Level not available\non this difficulty\nmode
-636: Do you want to delete all your Black Tarot cards and scores?
+635: На этом уровне\nсложности уровень\nнедоступен
+636: Вы хотите стереть все очки и черные карты таро?
 
-637: Save date & time
-638: [NEW SAVE]
-639: Save
-640: Load
-641: Game saved
-642: Game loaded
-643: [Quick]
-644: [Auto]
-645: Are you sure you want to delete this saved game?
-646: Are you sure you want to overwrite this saved game?
+637: Дата/время сохран.
+638: [НОВОЕ]
+639: Сохр.
+640: Загрузка
+641: Игра сохранена
+642: Игра загружена
+643: [Быстр.]
+644: [Авто]
+645: Вы уверены, что хотите удалить эту игру?
+646: Вы уверены, что хотите записать игру поверх этой?
 
-647: CHECKPOINT
-648: Saving progress
+647: КОНТР. ТОЧКА
+648: Сохранение
 
 # cheats
-649: Cheats are active only in Daydream and Insomnia difficulty modes.
-650: Full ammo granted.
-651: All weapons granted.
-652: Full health granted.
-653: Full ammo and health granted.
-654: God mode on.
-655: God mode off.
-656: Excessive gibbage on.
-657: Excessive gibbage off.
-658: Bodies will never disappear.
-659: Bodies will disappear.
-660: Decals will never disappear.
-661: Decals will disappear.
-662: All enemies have 1 HP.
-663: All enemies have normal HP.
-664: Lots and lots of gold granted.
-665: Haste on.
-666: Haste off.
-667: Demon Morph on.
-668: Demon Morph off.
-669: Weapon Modifier On.
-670: Weapon Modifier Off.
-671: Unlimited Golden Cards use granted.
-672: Access to all levels granted.
-673: All Black Tarot cards granted.
+649: Коды можно использовать только в режимах 'Дрема' и 'Бессонница'.
+650: Вы получили все боеприпасы.
+651: Вы получили все оружие.
+652: Здоровье восстановлено.
+653: Все боеприпасы и полное здоровье.
+654: Режим бога включен.
+655: Режим бога выключен.
+656: Много крови вкл.
+657: Много крови откл.
+658: Тела не будут пропадать.
+659: Тела будут пропадать.
+660: Следы выстрелов не будут пропадать.
+661: Следы выстрелов будут пропадать.
+662: У всех врагов стало по 1 HP.
+663: У всех врагов стало нормальное количество HP.
+664: Вы получили целую кучу золота.
+665: Ускорение включено.
+666: Ускорение выключено.
+667: Превращение в демона включено.
+668: Превращение в демона выключено.
+669: Модификатор оружия включен.
+670: Модификатор оружия выключен.
+671: Включено неограниченное использование золотых карт.
+672: Открыты все уровни.
+673: Открыты все черные карты таро.
 
 # connection speed
-674: Modem
+674: Модем
 675: ISDN
-676: Cable/ADSL
+676: Кабель/ADSL
 677: LAN/T1
 
-678: Saves
-679: AutoSaves
-680: [Chckpt]
+678: Сохр.
+679: Автосохр.
+680: [КонТоч]
 
-681: Press Fire to load last checkpoint.
-682: Press AltFire to load last quicksave.
-683: Press Esc to enter the menu.
-684: You can only use checkpoints to autosave the game in Trauma mode.
-685: Your health has been fully regenerated.
+681: Нажмите 'Огонь' для загрузки последней контрольной точки.
+682: Нажмите 'Альт. огонь' для загрузки последнего быстрого сохранения.
+683: Для входа в меню нажмите 'Esc'.
+684: Автосохранение в режиме 'Безумие' вы можете делать только в контрольных точках.
+685: Здоровье восстановлено
 
-686: This will start a new game: all levels will be locked again. Are you sure you want to exit your current game and start a new game?
-687: Are you sure you want to exit the current level?
+686: Вы начинаете новую игру: все уровни будут закрыты. Вы уверены, что хотите выйти из текущей игры и начать новую?
+687: Вы уверены, что хотите покинуть уровень?
 
-688: Playtime
+688: Время игры
 
 #last minute crap
-689: Unlock 23 Black Tarot cards to activate this mode
+689: Откройте 23 черные карты таро, чтобы активировать этот режим
 
 #last minute MP crap
 
-690: Appearance
-691: Choose your appearance
-692: Demon
-693: Fallen Angel
-694: Knight
-695: Beast
-696: Painkiller
+690: Модель игрока
+691: Выберите внешность
+692: Демон
+693: Падший ангел
+694: Рыцарь
+695: Монстр
+696: Пэйнкиллер
 
-697: Double-frag!
-698: Triple-frag!
-699: Pentafrag!
-700: OMFG!
+697: Двойное убийство!
+698: Тройное убийство!
+699: Пять фрагов!
+700: О, Боже!
 
-701: Additional hunt time granted.
-702: $PLAYER is our new Light Bearer.
-703: $PLAYER has lost the Light.
-704: The light was returned to its original place.
+701: Время охоты добавлено.
+702: $PLAYER стал Несущим Свет.
+703: $PLAYER потерял Свет.
+704: Свет вернулся на свое изначальное место.
+705: СОЗДАТЕЛИ
+706: Создатели
 
-705: CREDITS
-706: Show credits
+707: Белый
+708: Красный
 
-707: White
-708: Red
+709: ПАУЗА
 
-709: PAUSED
-
-710: Press 'Fire' to start
-711: FINAL RESULTS
+710: Нажмите 'Огонь', чтобы начать
+711: ФИНАЛЬНЫЙ РЕЗУЛЬТАТ
 
 # electro
-712: $PLAYER was fried by $KILLER.
+712: $PLAYER был поджарен злым $KILLER.
 # shuriken
-713: $KILLER decorated $PLAYER with the shurikens.
+713: $KILLER разукрасил $PLAYER шурикенами.
 
-714: Ready
-715: Break
+714: Готов
+715: Отмена
 
-716: Press 'Fire' to ready/unready
-717: Press 'AltFire' to switch teams
+716: Нажмите 'Огонь' для готовности/не готовности
+717: Нажмите 'Альт. огонь' для смены команды
 
 # lava
-718: $PLAYER took a hot bath.
+718: $PLAYER принял горячий душ.
 
 # Patch 1
-719: Spectate
-720: Join the server as spectator
-721: Disconnect
-722: Disconnect from the server
-723: SPECTATOR
-724: 'Fire' - to change player
-725: 'AltFire' - to fly
-726: 'Jump' - to join game
-727: Spectators
-728: Spec
-729: minute(s)
-730: Match begins in %d seconds.
-731: Waiting for other players.
-732: 'Next/prev. Weapon' - to switch view
-733: Prediction (beta)
-734: Warning: this option enables experimental prediction code
-735: Warning: You need to reconnect for the changes to take effect. This experimental beta code requires much more processing power of your PC, turn it off if you experience serious slowdowns. Please read README file for patch 1.15 for more info about the prediction code.
+719: Наблюдать
+720: Присоединиться как зритель
+721: Отключиться
+722: Отключиться от сервера
+723: ЗРИТЕЛЬ
+724: 'Огонь' - изменение игрока
+725: 'Альт. огонь' - летать
+726: 'Прыжок' - вступить в игру
+727: Зрители
+728: Зрит
+729: Минуты
+730: Матч начнется через %d сек.
+731: Ожидаем игроков.
+732: Чтобы сменить вид, используйте 'След./Пред. оружие'
+733: Предупреждение (бета)
+734: Внимание: эта опция включает экспериментальный код предупреждения. 
+735: Внимание: чтобы изменения вступили в силу, установите соединение повторно. Этот экспериментальный код требует гораздо больше ресурсов процессора, отключите его при появлении задержек.
 
-736: Weapon 6
-737: Weapon 7
-738: Weapon 8
-739: Weapon 9
-740: Weapon 10
+736: Оружие 6
+737: Оружие 7
+738: Оружие 8
+739: Оружие 9
+740: Оружие 10
 
-741: Weapon respawn time
-742: Set weapon respawn time
-743: Server FPS
-744: Set server FPS
+741: Время появления оружия
+742: Установить время появления оружия
+743: FPS сервера
+744: Установить FPS сервера
 
-745: Please insert Painkiller CD3
+745: Вставьте Painkiller CD3
+746: Предупреждение
+747: Ликвидирует задержки при интернет-игре за счет ресурсов процессора,\nне рекомендуется для игры по LAN
 
-746: Prediction
-747: Reduces Internet lag at some additional CPU cost, not recommended for LAN play
+748: Чтобы изменения вступили в силу, перезапустите игру.
 
-748: You must reconnect to the server for this option to take effect
+749: Фиксировать частоту
+750: Описание фиксирования частоты.
+751: Откл
+752: FPS сервера
+753: 2x FPS сервера
+754: 3x FPS сервера
 
-749: Framerate Lock
-750: Framerate Lock description
-751: Off
-752: Server FPS
-753: 2x Server FPS
-754: 3x Server FPS
+755: FPS физики
+756: Задать FPS физики.
 
-755: Physics FPS
-756: Set physics FPS
-
-757: Low Quality Multiplayer FX
-758: Use special low quality effects in Multiplayer
+757: Эффекты низ. качества
+758: Использовать эффекты низкого качества в сет. игре.

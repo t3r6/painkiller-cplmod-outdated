@@ -1,750 +1,728 @@
-iso-8859-1	# encoding - use cp1250 for Windows Central European
-
-# CPL GUI
-900: CPL GUI
-901: Extra multiplayer tweaking
-902: FOV
-903: Set your FOV
-904: Max FPS
-905: Maximum Framerate
-906: Remember to apply all your changes prior to joining the server!
-907: Show Timer
-908: Show/Hide ingame timer
-909: Show FPS
-910: Show your framerate ingame
-911: Enemy Color
-912: Color of your enemy
-913: Red
-914: Green
-915: Blue
-916: White
-917: Team Color
-918: Color of your team
-919: Fixed Colors
-920: If enabled, Enemy Color refers to the Blue Team and Team Color to the Red Team
-921: Right
-922: Left
-923: Center
+iso-8859-1 # encoding
 
 # globals
-1: Yes
+1: Sì
 2: No
 3: OK
 4: On
 5: Off
-6: None
+6: Niente
 7: Game Over
 
 # menu items
 
-8: Back
-9: Apply
+8: Indietro
+9: Applica
 
 # main menu
-10: Sign the Pact
-11: Load/Save
+10: Firma il patto
+11: Carica/Salva
 12: Multiplayer
-13: Options
-14: Secrets
-15: Return
-16: Quit
-17: Are you sure?
+13: Opzioni
+14: Segreti
+15: Indietro
+16: Esci
+17: Sei sicuro?
 
 # difficulty level
-18: Select difficulty level
-19: Daydream
-20: Insomnia
-21: Nightmare
+18: Seleziona il livello di difficoltà
+19: Sogno
+20: Insonnia
+21: Incubo
 22: Trauma
 
 # options menu
-23: Controls
+23: Controlli
 24: HUD
-25: Sound
+25: Audio
 26: Video
-27: Advanced Video
+27: Video avanzato
 
 # controls config
 
-28: Weapons
-29: Action
-30: Primary
-31: Alternative
+28: Armi
+29: Azione
+30: Primario
+31: Alternativo
 
 # keys
-32: Move forward
-33: Move backward
-34: Strafe left
-35: Strafe right
-36: Jump
-37: Fire
-38: Alternative Fire
-39: Next Weapon
-40: Previous Weapon
-41: Weapon 1
-42: Weapon 2
-43: Weapon 3
-44: Weapon 4
-45: Weapon 5
-46: BulletTime
-47: Pause
-48: Screenshot
+32: Vai avanti
+33: Vai indietro
+34: Vai a sinistra
+35: Vai a destra
+36: Salta
+37: Spara
+38: Fuoco alternativo
+39: Arma successiva
+40: Arma precedente
+41: Arma 1
+42: Arma 2
+43: Arma 3
+44: Arma 4
+45: Arma 5
+46: Tempoproiettile
+47: Pausa
+48: Fotografia
 49: Menu
-50: Scoreboard
-51: Say to all
-52: Say to team
-53: Rocket Jump
-54: Forward Rocket Jump
-55: Fire Switch
-56: Fire Switch Toggle
-57: Select Best Explosive
-58: Select Best Non-Explosive
-59: Select Best Custom
-60: Fire Best Explosive
-61: Fire Best Non-Explosive
-62: Fire Best Custom
+50: Punteggi
+51: Dillo a tutti
+52: Dillo alla squadra
+53: Salto con razzo
+54: Salto in avanti con razzo
+55: Pulsante fuoco
+56: Cambia pulsante fuoco
+57: Seleziona miglior esplosivo
+58: Seleziona miglior non-esplosivo
+59: Seleziona miglior personalizzato
+60: Usa miglior esplosivo
+61: Usa miglior non-esplosivo
+62: Usa miglior personalizzato
 
 # mouse options
-63: Invert Mouse
-64: Smooth Mouse
-65: Mouse sensitivity
-66: Wheel sensitivity
+63: Inverti mouse
+64: Mouse preciso
+65: Sensibil. mouse
+66: Sensibil. rotella
 
 # weapons config
-67: Secondary
-68: Switch
+67: Secondaria
+68: Cambia
 69: Pickup
-70: Explosives
-71: Non-Explosives
-72: Auto change weapon
-73: Custom
-74: Up
-75: Down
+70: Esplosivi
+71: Non esplosivi
+72: Cambio arma automatico
+73: Personalizza
+74: Su
+75: Giù
 
 # HUD config
-76: HUD Opacity
-77: HUD Size
-78: Small
-79: Normal
-80: Large
-81: Crosshair
-82: Opacity
-83: Red
-84: Green
-85: Blue
-999: Fov
+76: Opacità HUD
+77: Dimensioni HUD
+78: Piccolo
+79: Normale
+80: Grande
+81: Mirino
+82: Opacità
+83: Rosso
+84: Verde
+85: Blu
 
 # sound config
-86: Master volume
-87: Music volume
-88: Sound volume
-89: Reverse stereo
-90: Speakers setup
-91: 3D Sound Provider
-92: Two Speakers
-93: Headphones
+86: Vol. principale
+87: Volume musica
+88: Volume audio
+89: Inverti canali
+90: Impostazioni casse
+91: Sistema suono 3D
+92: Due casse
+93: Cuffie
 94: Surround
-95: Four Speakers
-96: Five-One
-97: Seven-One
+95: Quattro casse
+96: Cinque punto uno
+97: Sette punto uno
 
 # video config
-98: Resolution
-99: Texture quality
-100: Full Screen
+98: Risoluzione
+99: Qualità texture
+100: Schermo intero
 101: Gamma
-102: Brightness
-103: Contrast
-104: Very Low
-105: Low
-106: Medium
-107: High
-108: Architecture
-109: Characters
-110: Skies
+102: Luminosità
+103: Contrasto
+104: Molto basso
+105: Basso
+106: Medio
+107: Alto
+108: Architettura
+109: Personaggi
+110: Cieli
 
 # advanced video config
-111: Character shadows
-112: Weather effects
-113: Sky
-114: View weapon
-115: Weapon specular
-116: Weapon normal map
-117: Texture filtering
-118: Multisampling
-119: Decals stay
-120: Dynamic lights
-121: Projectors
-122: Coronas
-123: Decals
-124: Detail Textures
-125: Bilinear
-126: Trilinear
-127: Anisotropic
+111: Ombre personaggio
+112: Effetti climatici
+113: Cielo
+114: Visuale arma
+115: Arma speculare
+116: Mappa arma
+117: Filtro texture
+118: Multicampionamento
+119: Decal rimangono
+120: Luci dinamiche
+121: Proiettori
+122: Lampade circolari
+123: Decal
+124: Dettaglio texture
+125: Bilineare
+126: Trilineare
+127: Anisotropico
 
 # multiplayer menu
 
 128: Password
-129: Join Game
-130: Start Game
-131: Player Settings
+129: Entra nel gioco
+130: Inizia il gioco
+131: Dati giocatore
 
 # join game menu
 132: Internet
 133: LAN
-134: Favorites
-135: Add To Favorites
-136: Remove From Favorites
-137: Refresh
-138: Stop
-139: Join
-140: Server Name
-141: Servers
-142: Players
-143: Map
-144: Game
+134: Preferiti
+135: Aggiungi a preferiti
+136: Togli da preferiti
+137: Aggiorna
+138: Termina
+139: Partecipa
+140: Nome server
+141: Server
+142: Giocat.
+143: Mappa
+144: Gioco
 145: Ping
-146: Enter IP
-147: Couldn't find a server
-148: Click to select
-149: Updating server list
-150: Update finished
-151: [NONE]
-152: [NO MAP]
-153: Unknown
+146: Inserisci IP
+147: Nessun server trovato
+148: Clicca per selezionare
+149: Aggiornamento lista server
+150: Aggiornamento concluso
+151: [NIENTE]
+152: [NESSUNA MAPPA]
+153: Sconosciuto
 
 # start game menu
-154: Server Password
-155: Server port
-156: Mode
+154: Password server
+155: Porta server
+156: Modalità
 157: Free For All
 158: Team Deathmatch
 159: Voosh
 160: The Light Bearer
 161: People Can Fly
-162: Max players
-163: Max spectators
-164: Frag limit
-165: Time limit
-166: Public server
-167: Team damage
-168: Weapons stay
-169: Powerups
-170: Powerup Drop
-171: Allow Bunnyhopping
-172: Allow Brightskins
-173: Allow Forward Rocket Jump
-174: Brightskin Team
-175: Brightskin Enemy
-176: General
-177: Advanced
-178: Start
-179: Add
-180: Add all
-181: Remove
-182: Remove all
+#157: Libero per tutti
+#158: Deathmatch in squadra
+#159: Voosh
+#160: Il portatore della luce
+#161: La gente vola
+162: Massimo giocatori
+163: Massimo spettatori
+164: Limite frag
+165: Tempo limite
+166: Server pubblico
+167: Danno squadra
+168: Armi restano
+169: Powerup
+170: Perdita powerup
+171: Consenti bunnyhopping
+172: Consenti brightskin
+173: Permetti salto con il razzo in avanti
+174: Team con brightskin
+175: Avversari con brightskin
+176: Generale
+177: Avanzato
+178: Inizia
+179: Aggiungi
+180: Aggiungi tutto
+181: Togli
+182: Togli tutto
 
 # player settings menu
-183: Name
-184: Team
-185: Connection speed
-186: CD key
-187: Delete
-188: Enter
+183: Nome
+184: Squadra
+185: Velocità conness.
+186: Chiave
+187: Elimina
+188: Inserisci
 
 # menu items' descriptions
 
-189: Return to the previous screen
-190: Apply settings and return to the previous screen
+189: Torna alla schermata precedente
+190: Applica le impostazioni e torna alla schermata precedente
 
 # main menu
-191: Start new single player game
-192: Load a previously saved game or Save your current game
-193: Play the game on the Internet or start your own multiplayer server
-194: Configure controls, audio, video and other settings of the game
-195: Check out how many game secrets you have already discovered
-196: Return to the game
-197: Immediately exit the game
+191: Inizia una nuova partita a giocatore singolo
+192: Carica una partita salvata in precedenza o salva la tua partita attuale
+193: Gioca su Internet o avvia il tuo server multiplayer personale
+194: Configura controlli, audio, video e altre impostazioni del gioco
+195: Guarda quanti segreti hai già scoperto nel gioco
+196: Torna al gioco
+197: Esci immediatamente dal gioco
 
 # difficulty modes
-198: Extremely easy mode for beginners
-199: Recommended standard difficulty
-200: Hard mode for advanced players
-201: Painkiller's true story
+198: Modalità molto facile per principianti
+199: Difficoltà standard raccomandata
+200: Modalità difficile per giocatori esperti
+201: La vera storia di Painkiller
 
 # options menu
-202: Configure game controls
-203: Configure HUD
-204: Configure sound and music
-205: Configure graphic options
-206: Additional settings for advanced users
+202: Configura controlli di gioco
+203: Configura HUD
+204: Configura audio e musica
+205: Configura opzioni grafiche
+206: Impostazioni aggiuntive per utenti esperti
 
 # controls config
 
-207: Go to weapon configuration screen
-208: Left-click on the key to change, then press the new key/button
+207: Vai alla schermata di configurazione delle armi
+208: Clicca sul tasto col tasto sinistro per cambiarlo, quindi premi il nuovo tasto/pulsante
 
 # mouse options
-209: Flight simulator style mouse control
-210: Eliminate mouse jerkiness
-211: Set your mouse sensitivity
-212: Set your mouse wheel sensitivity
+209: Controllo con il mouse in stile simulatore di volo
+210: Elimina scatti del mouse
+211: Imposta la sensibilità del mouse
+212: Imposta la sensibilità della rotella del mouse
 
 # HUD config
-213: Set the HUD opacity
-214: Set the HUD size
-215: Choose your crosshair
-216: Choose your crosshair's opacity
-217: Choose your crosshair's color
+213: Imposta l'opacità dell'HUD
+214: Imposta la dimensione dell'HUD
+215: Scegli il tuo mirino
+216: Scegli l'opacità del tuo mirino
+217: Scegli il colore del tuo mirino
 
 # weapons config
-218: Automatically change weapon
+218: Cambia arma automaticamente
 
 # sound config
-219: Set the main volume
-220: Set the music volume
-221: Set the sound effects volume
-222: Reverse stereo
-223: Choose your speaker setup
-224: Choose your 3D sound provider
+219: Imposta volume principale
+220: Imposta il volume della musica
+221: Imposta il volume degli effetti audio
+222: Inverti canali
+223: Scegli le impostazioni delle casse
+224: Scegli il sistema per il suono 3D
 
 # video config
-225: The higher resolutions, the faster PC and 3D card is required
-226: Set to low if you have performance issues
-227: Uncheck if you want to run the game in window mode
-228: Set gamma
-229: Set brightness
-230: Set contrast
-231: Change weapon texture quality,
-232: Change architectural texture quality,
-233: Change enemy texture quality,
-234: Change sky texture quality,
+225: Più sono alte le risoluzioni, più veloci devono essere PC e scheda 3D
+226: Imposta su basso se hai prestazioni limitate
+227: Deseleziona se vuoi avviare il gioco in modalità finestra
+228: Imposta gamma
+229: Imposta luminosità
+230: Imposta contrasto
+231: Cambia la qualità delle texture delle armi,
+232: Cambia la qualità delle texture architettoniche,
+233: Cambia la qualità delle texture dei nemici,
+234: Cambia la qualità delle texture del cielo,
 
 # advanced video config
-235: Set to off if you have performance issues
-236: Set to bilinear if you have performance issues
-237: Set the multisampling level
-238: Set the time after which decals disappear
+235: Imposta su off se hai prestazioni limitate
+236: Imposta su bilineare se hai prestazioni limitate
+237: Imposta il livello di multicampionamento
+238: Imposta il tempo dopo il quale scompaiono i decal
 
 # multiplayer menu
 
-239: Enter server password
-240: Search for multiplayer games on the LAN/Internet and join them
-241: Start your own multiplayer LAN/Internet server
-242: Configure multiplayer settings
+239: Inserisci password server
+240: Cerca partite multiplayer sulla rete LAN/Internet e partecipa
+241: Avvia il tuo server multiplayer LAN/Internet personale
+242: Configura le impostazioni multiplayer
 
 # join game menu
-243: Search for multiplayer games on the Internet and join them
-244: Search for multiplayer games on your local network and join them
-245: List of your favorite servers
-246: Add selected server to favorites
-247: Remove selected server from favorites
-248: Refresh the list of servers
-249: Stop refreshing the servers list
-250: Join the server and play
-251: Enter server IP
+243: Cerca partite multiplayer su Internet e partecipa
+244: Cerca partite multiplayer sulla tua rete locale e partecipa
+245: Elenco dei tuoi server preferiti
+246: Aggiungi il server selezionato ai preferiti
+247: Togli il server selezionato dai preferiti
+248: Aggiorna la lista dei server
+249: Smetti di aggiornare la lista dei server
+250: Accedi al server e gioca
+251: Inserisci IP server
 
 # start game menu
-252: You can name your server here
-253: You can set the password to limit server access
-254: Change server port
-255: Select game mode
-256: Set maximum number of players
-257: Set maximum number of spectators
-258: Number of frags required to end the map, 0 = disabled
-259: Maximum time between map changes, 0 = disabled
-260: Advertise your server on the Internet
-261: Turn friendly fire on/off
-262: Check if weapons should not disappear after pickup
-263: Enable or disable the powerups on the map
-264: Check if the powerup drops when owner is fragged
-265: Check to allow bunnyhopping
-266: Check to allow bright skins
-267: Check to allow forward rocket jump
-268: Select team brightskin color
-269: Select enemies brightskin color
-270: General settings
-271: Advanced settings
-272: Start the server
+252: Qui puoi nominare il tuo server
+253: Puoi impostare una password per limitare l'accesso al server
+254: Cambia la porta del server
+255: Seleziona modalità di gioco
+256: Imposta numero massimo di giocatori
+257: Imposta numero massimo di spettatori
+258: Numero di frag richiesti per finire la mappa, 0 = disabilitato
+259: Tempo massimo tra i cambi di mappa, 0 = disabilitato
+260: Pubblicizza il tuo server su Internet
+261: Attiva/disattiva fuoco alleati
+262: Scegli se le armi non devono scomparire dopo che vengono raccolte
+263: Abilita o disabilita i powerup sulla mappa
+264: Scegli se i powerup cadono quando il proprietario viene ucciso
+265: Scegli per attivare il bunnyhopping
+266: Scegli per attivare le brightskin
+267: Scegli per permettere il salto in avanti con il razzo
+268: Scegli colore brightskin del team
+269: Scegli colore brightskin dei nemici
+270: Impostazioni generali
+271: Impostazioni avanzate
+272: Avvia il server
 
 # list manipulation
-273: Move up
-274: Move down
-275: Add selected item
-276: Add all items
-277: Remove selected item
-278: Remove all items
+273: Vai su
+274: Vai giù
+275: Aggiungi l'oggetto selezionato
+276: Aggiungi tutti gli oggetti
+277: Togli l'oggetto selezionato
+278: Togli tutti gli oggetti
 
 # player settings menu
-279: Enter your nickname
-280: Select the team for teamplay based games
-281: Select your connection speed
-282: Enter your CD key
+279: Inserisci il tuo soprannome
+280: Seleziona la squadra per le partite di gruppo
+281: Seleziona la tua velocità di connessione
+282: Inserisci la tua chiave CD
 
 # map
 
 # levels
-283: Cemetery
-284: Atrium Complex
-285: Catacombs
-286: Cathedral
+283: Cimitero
+284: Atrio
+285: Catacombe
+286: Cattedrale
 287: Enclave
-288: Prison
-289: Opera House
-290: Asylum
-291: Snowy bridge
-292: Town
-293: Swamp
-294: Train Station
-295: Abandoned Factory
-296: Military Base
-297: Ruins
-298: Castle
-299: The Palace
-300: Babel
-301: Forest
-302: Tower
-303: City On Water
-304: Docks
-305: Old Monastery
-306: Hell
+288: Prigione
+289: Teatro dell'Opera
+290: Manicomio
+291: Ponte innevato
+292: Città
+293: Palude
+294: Stazione
+295: Fabbrica
+296: Base militare
+297: Rovine
+298: Castello
+299: Il palazzo
+300: Babele
+301: Foresta
+302: Torre
+303: Città sull'acqua
+304: Moli
+305: Vecchio monastero
+306: Inferno
 
 # stats
-307: Cards found
-308: Gold found
+307: Carte trovate
+308: Oro trovato
 
 # single-player stats
 
-309: YOUR SCORE
-310: Gameplay Time
-311: Monsters Killed
-312: Souls Collected
-313: Gold Found
-314: Holy Items Found
-315: Ammo Found
-316: Objects Destroyed
-317: Secrets Found
-318: Card unlocking status
-319: Status
-320: LOCKED
-321: UNLOCKED
+309: IL TUO PUNTEGGIO
+310: Tempo di gioco
+311: Mostri uccisi
+312: Anime raccolte
+313: Oro trovato
+314: Oggetti sacri trovati
+315: Munizioni trovate
+316: Oggetti distrutti
+317: Segreti trovati
+318: Stato carte sbloccate
+319: Stato
+320: BLOCCATO
+321: SBLOCCATO
 
 # multi-player messages
 
-322: $PLAYER has entered the arena.
-323: $PLAYER chickened and left the arena.
-324: $KILLER violated $PLAYER with the shotgun.
-325: $KILLER ended $PLAYER's misery.
-326: $KILLER ventilated $PLAYER.
-327: $PLAYER hugged $KILLER's grenade.
-328: $PLAYER rode $KILLER's rocket.
-329: $PLAYER swallowed $KILLER's rocket.
-330: $KILLER crucified $PLAYER.
-331: $KILLER shredded $PLAYER.
-332: $KILLER skillfully telefragged $PLAYER.
-333: $PLAYER fought gravity and lost.
-334: $PLAYER has left the building.
-335: $PLAYER forgot which way the barrel goes.
-336: $PLAYER has proven that life is short.
-337: $PLAYER exploded.
+322: $PLAYER è entrato nell'arena.
+323: $PLAYER si è ritirato e ha lasciato l'arena.
+324: $KILLER ha aggredito $PLAYER con il fucile.
+325: $KILLER ha messo fine alle sofferenze di $PLAYER.
+326: $KILLER ha fatto fuori $PLAYER.
+327: $PLAYER ha abbracciato la granata di $KILLER.
+328: $PLAYER ha cavalcato il razzo di $KILLER.
+329: $PLAYER ha ingoiato il razzo di $KILLER.
+330: $KILLER ha crocifisso $PLAYER.
+331: $KILLER ha fatto a pezzi $PLAYER.
+332: $KILLER ha telefraggato $PLAYER.
+333: $PLAYER ha sfidato la gravità e ha perso.
+334: $PLAYER ci ha lasciati.
+335: $PLAYER ha dimenticato come si spara.
+336: $PLAYER ha dimostrato che la vita è breve.
+337: $PLAYER è esploso.
 
 # cards
-338: Speed
-339: Dexterity
-340: Fury
-341: Rage
-342: Confusion
-343: Endurance
-344: Iron Will
-345: Haste
-346: Double Haste
-347: Triple Haste
-348: Time Bonus
-349: Double Time Bonus
-350: Soul Catcher
-351: Soul Keeper
-352: Soul Redeemer
-353: Dark Soul
-354: Blessing
-355: Vitality
-356: Replenish
-357: Greed
-358: Forgiveness
-359: Mercy
-360: Divine Intervention
-361: Last Breath
+338: Velocità
+339: Destrezza
+340: Furia
+341: Rabbia
+342: Confusione
+343: Resistenza
+344: Volontà ferrea
+345: Accelerazione
+346: Doppia accelerazione
+347: Tripla accelerazione
+348: Tempo bonus
+349: Doppio tempo bonus
+350: Acquisitore dell'anima
+351: Guardiano dell'anima
+352: Redentore dell'anima
+353: Anima scura
+354: Benedizione
+355: Vitalità
+356: Ricostituente
+357: Avidità
+358: Perdono
+359: Pietà
+360: Intervento divino
+361: Ultimo respiro
 
 # cards descriptions
-362: Move faster
-363: Weapons reload 2x faster
-364: Deliver 2x more damage
-365: Deliver 4x more damage
-366: Confuse enemies
-367: Take only half of the damage
-368: Enemies can't hurt you
-369: The world moves 2x slower
-370: The world moves 4x slower
-371: The world moves 8x slower
-372: Golden Cards last\n10 seconds longer
-373: Golden Cards last\n20 seconds longer
-374: Leech souls from a distance
-375: Souls stay longer
-376: Souls provide more health
-377: Morph into demon form\nat every 50 souls
-378: Increase the initial\nhealth to 150
-379: Increase base health\ncapacity to 150
-380: Double the ammo in\nammo boxes
-381: Double the amount\nof hidden wealth
-382: You can use Golden Cards\ntwo times per level
-383: You can use Golden Cards\nthree times per level
-384: All Cards can be placed\nfor free
-385: Health regeneration when\nyou're dying
+362: Ti muovi più velocemente
+363: Velocità ricarica armi 2x
+364: Danno inflitto 2x
+365: Danno inflitto 4x
+366: Confondi i nemici
+367: Ricevi solo metà dei danni
+368: I nemici non possono ferirti
+369: Mondo 2 volte più lento
+370: Mondo 4 volte più lento
+371: Mondo 8 volte più lento
+372: Durata carte +10 sec.
+373: Durata carte +20 sec.
+374: Assorbi le anime da lontano
+375: Le anime rimangono di più
+376: Le anime danno più salute
+377: Diventi demone ogni 50 anime
+378: Porti la salute iniziale a 150
+379: Capacità base salute a 150
+380: Doppie munizioni nelle scatole
+381: Doppie ricchezze nascoste
+382: Carte temp. 2 volte a livello
+383: Carte temp. 3 volte a livello
+384: Posizioni carte gratis
+385: Recuperi quando stai morendo
 
 # multi-player stats
 
-386: Player
-387: Frags
-388: Kills
-389: Deaths
+386: Giocatore
+387: Frag
+388: Uccisioni
+389: Morti
 390: Ping
-391: Time
-392: Packet loss
-393: Time left
+391: Tempo
+392: Perdita di pacchi
+393: Tempo rimasto
 
 # messages
-394: Press 'Enter' to continue.
-395: Press 'Fire' to continue.
+394: Premi 'Invio' per continuare.
+395: Premi 'Fuoco' per continuare.
 
 # black tarot card unlocking conditions
-396: Finish the level
-397: Destroy all objects
-398: Kill all monsters
-399: Find at least 500 gold
-400: Kill Necrogiant in less than 02:00
-401: Finish the level using only non-explosive weapons
-402: Collect at least 100 souls
-403: Finish the level using only Painkiller weapon
-404: Find every secret place
-405: Finish the level using stakes only
-406: Kill Swamp Thing in less than 04:00
-407: Don't collect a single soul
-408: Kill at least 30 enemies in Demon Morph mode
-409: Kill all monsters
-410: Kill Guardian in less than 01:20
-411: Find every Holy Item
-412: Finish the level without any armor
-413: Find all ammo
-414: Finish the level without using the Black Tarot
-415: Kill Alastor in less than 05:00
-416: Find every secret place
-417: Morph into demon at least 3 times
-418: Keep HP above 50
-419: Kill Lucifer
+396: Finisci il livello
+397: Distruggi tutti gli oggetti
+398: Uccidi tutti i mostri
+399: Trova almeno XXX monete d'oro
+400: Uccidi Necrogigante in meno di MM:SS
+401: Finisci il livello usando solo armi non esplosive
+402: Raccogli almeno XXX anime
+403: Finisci il livello usando solo l'arma Painkiller
+404: Trova tutte le locazioni segrete
+405: Finisci il livello usando solo i dardi
+406: Uccidi il mostro della palude in meno di MM:SS
+407: Non raccogliere nessuna anima
+408: Uccidi almeno 30 nemici in modalità demone
+409: Uccidi tutti i mostri
+410: Uccidi il guardiano in meno di 01:20
+411: Trova tutti gli oggetti sacri
+412: Finisci il livello senza corazza
+413: Trova tutte le munizioni
+414: Finisci il livello senza usare il tarocco nero
+415: Uccidi Alastor in meno di MM:SS
+416: Trova tutte le locazioni segrete
+417: Trasformati in demone almeno 3 volte
+418: Mantieni gli Hit Point sopra 50
+419: Uccidi Lucifero
 
 # main menu
-420: Resume Game
-421: Return to Map
+420: Riprendi partita
+421: Ritorna alla mappa
 
 # difficulty level
-422: Mode locked: Finish Nightmare to unlock
+422: Modalità bloccata: finisci la modalità Incubo per sbloccarla
 
 # map
-423: Chapter
-424: Level
-425: Black Tarot not available in demo version
-426: Black Tarot inactive
-427: Select level
-428: Select chapter
-429: Go to Black Tarot
-430: Go to Main Menu
-431: Play level
-432: Black Tarot inactive when playing the level
-433: Black Tarot not available in Daydream mode
+423: Capitolo
+424: Livello
+425: Tarocco nero non disponibile nella versione demo
+426: Tarocco nero non attivo
+427: Seleziona livello
+428: Seleziona capitolo
+429: Vai al tarocco nero
+430: Vai al menu principale
+431: Gioca livello
+432: Tarocco nero non attivo durante il livello
+433: Tarocco nero non attivo in modalità Sogno
 
 # black tarot
-434: Cost to place
-435: Withdrawal return
-436: Gold after withdrawal
-437: Click "Use Golden Cards" key during the level\nto unleash the power of your Golden Cards set.\nYou can use this set [x] time(s) per level.
-438: Effects of all Silver Cards placed here\nare immediate and last through the whole level.
-439: Not enough gold to place\nthe card.
-440: Your gold
-441: Gold required
+434: Costo per posizionare
+435: Resto per il ritiro
+436: Oro dopo il ritiro
+437: Clicca sul tasto "Usa carte d'oro" durante il livello\nper usare il potere delle tue carte d'oro.\nPuoi usarle [x] volta/e per livello.
+438: Gli effetti di tutte le carte d'argento messe qui\nsono immediati e durano per tutto il livello.
+439: Oro insufficiente per\nposizionare la carta.
+440: Il tuo oro
+441: Oro necessario
 
 # sound options
 442: EAX Acoustics
-443: Check to enable special EAX effects
-444: Battle Music
-445: Ambient Music
-446: Set the battle music volume
-447: Set the ambient music volume
+443: Seleziona per abilitare gli effetti speciali EAX
+444: Musica scontro
+445: Musica base
+446: Imposta volume della musica combattimento
+447: Imposta volume musica ambientale
 
 # video options
-448: Particles detail
+448: Dettaglio particelle
 
 # controls
-449: Use Golden Cards
-450: Flashlight
+449: Usa carte d'oro
+450: Torcia
 
 # game over
-451: Press 'Fire' to restart or 'Escape' to exit to menu.
+451: Premi 'Fuoco' per riavviare o 'Esc' per tornare al menu.
 
 # scoreboard
-452: Armors Found
-453: FAILED
-454: N/A
-455: You have
-456: unlocked a new
-457: Black Tarot card!
+452: Corazze trovate
+453: FALLITO
+454: N/D
+455: Hai
+456: sbloccato una nuova
+457: carta tarocco nero!
 
 # weapons
 458: Pain
 459: Killer
-460: Shotgun
-461: Freezer
-462: Stakegun
-463: Grenade Launcher
-464: Rocket Launcher
-465: Chaingun
+460: Fucile
+461: Congelatore
+462: Lanciadardi
+463: Lanciagranate
+464: Lanciarazzi
+465: Minigun
 466: Driver
 467: Electro
 
 # warnings
-468: Daydream mode is an extremely easy mode for beginners. In this mode you don't have the access to Black Tarot.\nAre you sure you want to select this mode?
-469: Are you sure?
-470: Do not show this warning again
+468: La modalità sogno è molto facile ed è per i principianti. Non hai accesso al tarocco nero.\nSei sicuro di voler selezionare questa modalità?
+469: Sei sicuro?
+470: Non mostrare più questo avviso
 
-471: TEXTURE QUALITY
+471: QUALITÀ TEXTURE
 
-472: Exit To The Map
+472: Vai alla mappa
 
-473: Secret Area discovered!
+473: Scoperta un'area segreta!
 
-474: Difficulty
+474: Difficoltà
 
 # create server
-475: Available maps
-476: Server maps
+475: Mappe disponibili
+476: Mappe server
 
 # keys
-477: Unknown Key
-478: Cursor Up
-479: Cursor Down
-480: Cursor Left
-481: Cursor Right
-482: Space
+477: Tasto sconosciuto
+478: Freccia su
+479: Freccia giù
+480: Freccia sinistra
+481: Freccia destra
+482: Barra spaziatrice
 483: Tab
 484: Backspace
-485: Enter
-486: Pause
+485: Invio
+486: Pausa
 487: Shift
-488: Control
-489: Escape
-490: Page Up
-491: Page Down
-492: End
+488: Ctrl
+489: Esc
+490: Pagsu
+491: Paggiù
+492: Fine
 493: Home
-494: Insert
-495: Delete
-496: Numpad 0
-497: Numpad 1
-498: Numpad 2
-499: Numpad 3
-500: Numpad 4
-501: Numpad 5
-502: Numpad 6
-503: Numpad 7
-504: Numpad 8
-505: Numpad 9
-506: Numpad *
-507: Numpad +
-508: Numpad -
-509: Numpad .
-510: Numpad /
-511: NumLock
-512: ScrollLock
-513: Left Shift
-514: Right Shift
-515: Left Alt
-516: Right Alt
-517: Left Menu
-518: Right Menu
-519: Far Right Menu
+494: Ins
+495: Canc
+496: Tastierino numerico 0
+497: Tastierino numerico 1
+498: Tastierino numerico 2
+499: Tastierino numerico 3
+500: Tastierino numerico 4
+501: Tastierino numerico 5
+502: Tastierino numerico 6
+503: Tastierino numerico 7
+504: Tastierino numerico 8
+505: Tastierino numerico 9
+506: Tastierino numerico *
+507: Tastierino numerico +
+508: Tastierino numerico -
+509: Tastierino numerico .
+510: Tastierino numerico /
+511: Bloc num
+512: Bloc scorr
+513: Shift sinistro
+514: Shift destro
+515: Alt sinistro
+516: Alt destro
+517: Menu sinistro
+518: Menu destro
+519: Menu estrema destra
 520: Printscreen
-521: Caps Lock
-522: Numpad Enter
-523: Left Mouse Button
-524: Right Mouse Button
-525: Middle Mouse Button
-526: Mouse Wheel Forward
-527: Mouse Wheel Back
-528: Left Ctrl
-529: Right Ctrl
+521: Bloc Maiusc
+522: Invio tastierino numerico
+523: Pulsante sinistro mouse
+524: Pulsante destro mouse
+525: Pulsante centrale mouse
+526: Rotella mouse avanti
+527: Rotella mouse indietro
+528: Ctrl sinistro
+529: Ctrl destro
 
 # video options
-530: Low
-531: High
+530: Basso
+531: Alto
 
 # weapons config
-532: Pickup priority
-533: Custom 1
-534: Custom 2
-535: Select Best Custom 1
-536: Select Best Custom 2
-537: Fire Best Custom 1
-538: Fire Best Custom 2
+532: Priorità pickup
+533: Personalizza 1
+534: Personalizza 2
+535: Scegli miglior personale 1
+536: Scegli miglior personale 2
+537: Usa miglior personale 1
+538: Usa miglior personale 2
 
 # keys
-539: Quick Load
-540: Quick Save
+539: Caricamento rapido
+540: Salvataggio rapido
 
 # messages keys
-541: Messages
-542: Configure multiplayer messages
-543: Key
+541: Messaggi
+542: Configura messaggi multiplayer
+543: Tasto
 544: SA
-545: Message
+545: Messaggio
 
 # messages
-546: Get Quad!
-547: Our Quad!
-548: Our Quad Dead
-549: Enemy Quad!
-550: Enemy Quad Dead
-551: Get Invincibility!
-552: Our Invincibility!
-553: Enemy Invincibility!
-554: [custom message/taunt]
-555: [custom message/taunt]
-556: [custom message/taunt]
-557: [custom message/taunt]
-558: [custom message/taunt]
-559: [custom message/taunt]
-560: [custom message/taunt]
-561: [custom message/taunt]
-562: [custom message/taunt]
-563: [custom message/taunt]
+546: Prendi Quad!
+547: Quad nostra!
+548: Nostra Quad esaurita
+549: Quad nemici!
+550: Quad nemici esaurita!
+551: Ottieni invincibilità
+552: Invincibilità nostra!
+553: Invincibilità nemici!
+554: [messaggio personalizzato/sfida]
+555: [messaggio personalizzato/sfida]
+556: [messaggio personalizzato/sfida]
+557: [messaggio personalizzato/sfida]
+558: [messaggio personalizzato/sfida]
+559: [messaggio personalizzato/sfida]
+560: [messaggio personalizzato/sfida]
+561: [messaggio personalizzato/sfida]
+562: [messaggio personalizzato/sfida]
+563: [messaggio personalizzato/sfida]
 
 # video options
-564: Graphics Settings
-565: Set overall graphics quality
-566: Custom
-567: Fastest
-568: Fast
+564: Impostazioni grafiche
+565: Imposta qualità grafica generale
+566: Personalizzato
+567: Velocissimo
+568: Veloce
 569: Standard
-570: Very High
-571: Insane
+570: Molto alto
+571: Folle
 
-572: Check which messages you want to say to all players
-573: All players can see this message
-574: Only your team can see this message
+572: Seleziona i messaggi che vuoi inviare a tutti i giocatori
+573: Tutti i giocatori possono vedere questo messaggio
+574: Solo la tua squadra può vedere questo messaggio
 
-575: Clip plane
-576: Set clip plane
-577: Secret multiplayer model unlocked
-578: You are granted unlimited and free Golden Cards usage
+575: Piano di clip
+576: Imposta piano di clip
+577: Modello segreto di multiplayer sbloccato
+578: Puoi utilizzare un numero illimitato di carte d'oro
 
-# multiplayer error messages
+# multiplayer error messages - DO NOT TRANSLATE
 579: Disconnected on timeout: %d ms
 580: GameSpy timeout error!!!\nDescription: %s
 581: NAT Negotiation: NN server acknowledged your connection request
@@ -798,125 +776,124 @@ iso-8859-1	# encoding - use cp1250 for Windows Central European
 629: Net Error: Couldn't resolve address: %s
 
 # maps stats
-630: BEST SCORES
+630: RECORD
 
 631: HeadBob
-632: Set HeadBob
-633: Ambient sounds
-634: Enable/disable ambient sounds
+632: Imposta HeadBob
+633: Suoni ambientali
+634: Attiva/disattiva suoni ambientali
 
-635: Level not available\non this difficulty\nmode
-636: Do you want to delete all your Black Tarot cards and scores?
+635: Livello non disponibile\nin questa\nmodalità
+636: Vuoi cancellare tutte le tue carte tarocco nero e i tuoi punteggi?
 
-637: Save date & time
-638: [NEW SAVE]
-639: Save
-640: Load
-641: Game saved
-642: Game loaded
-643: [Quick]
-644: [Auto]
-645: Are you sure you want to delete this saved game?
-646: Are you sure you want to overwrite this saved game?
+637: Data e ora salvataggio
+638: [NUOVO SALVATAGGIO]
+639: Salva
+640: Carica
+641: Partita salvata
+642: Partita caricata
+643: [Rapido]
+644: [Automatico]
+645: Vuoi davvero cancellare questo salvataggio?
+646: Vuoi davvero sovrascrivere questo salvataggio?
 
 647: CHECKPOINT
-648: Saving progress
+648: Salvataggio progressi in corso
 
 # cheats
-649: Cheats are active only in Daydream and Insomnia difficulty modes.
-650: Full ammo granted.
-651: All weapons granted.
-652: Full health granted.
-653: Full ammo and health granted.
-654: God mode on.
-655: God mode off.
-656: Excessive gibbage on.
-657: Excessive gibbage off.
-658: Bodies will never disappear.
-659: Bodies will disappear.
-660: Decals will never disappear.
-661: Decals will disappear.
-662: All enemies have 1 HP.
-663: All enemies have normal HP.
-664: Lots and lots of gold granted.
-665: Haste on.
-666: Haste off.
-667: Demon Morph on.
-668: Demon Morph off.
-669: Weapon Modifier On.
-670: Weapon Modifier Off.
-671: Unlimited Golden Cards use granted.
-672: Access to all levels granted.
-673: All Black Tarot cards granted.
+649: I cheat sono attivi solo nelle modalità Sogno e Insonnia.
+650: Ottenute tutte le munizioni.
+651: Ottenute tutte le armi.
+652: Ottenuta massima salute.
+653: Ottenute tutte le munizioni e la massima salute.
+654: Modalità divinità attiva.
+655: Modalità divinità non attiva.
+656: Gore eccessivo attivo.
+657: Gore eccessivo non attivo.
+658: I corpi non scompaiono mai.
+659: I corpi scompaiono.
+660: Le decal non scompaiono mai.
+661: Le decal scompaiono.
+662: Tutti i nemici hanno 1 HP.
+663: Tutti i nemici hanno HP normali.
+664: Hai veramente un sacco d'oro.
+665: Accelerazione attiva.
+666: Accelerazione non attiva.
+667: Trasformazione in demone attiva.
+668: Trasformazione in demone non attiva.
+669: Modificatore delle armi attivo.
+670: Modificatore delle armi non attivo.
+671: Ottenuto uso illimitato delle carte d'oro.
+672: Ottenuto accesso a tutti i livelli.
+673: Ottenute tutte le carte tarocco nero.
 
 # connection speed
 674: Modem
 675: ISDN
-676: Cable/ADSL
+676: Cavo/ADSL
 677: LAN/T1
 
-678: Saves
-679: AutoSaves
-680: [Chckpt]
+678: Salvataggi
+679: Autosalva
+680: [Checkpoint]
 
-681: Press Fire to load last checkpoint.
-682: Press AltFire to load last quicksave.
-683: Press Esc to enter the menu.
-684: You can only use checkpoints to autosave the game in Trauma mode.
-685: Your health has been fully regenerated.
+681: Premi Fuoco per caricare l'ultimo checkpoint.
+682: Premi Alt Fuoco per caricare l'ultimo salvataggio rapido.
+683: Premi Esc per entrare nel menu.
+684: Puoi usare i checkpoint per il salvataggio automatico del gioco solo in modalità Trauma.
+685: La tua salute è stata completamente ripristinata.
 
-686: This will start a new game: all levels will be locked again. Are you sure you want to exit your current game and start a new game?
-687: Are you sure you want to exit the current level?
+686: In questo modo inizierai una nuova partita e tutti i livelli saranno di nuovo bloccati. Vuoi davvero uscire dalla partita corrente e iniziarne una nuova?
+687: Vuoi davvero uscire dal livello corrente?
 
-688: Playtime
+688: Tempo gioco
 
 #last minute crap
-689: Unlock 23 Black Tarot cards to activate this mode
+689: Sblocca 23 carte tarocco nero per attivare questa modalità
 
 #last minute MP crap
 
-690: Appearance
-691: Choose your appearance
-692: Demon
-693: Fallen Angel
-694: Knight
-695: Beast
+690: Modello giocatore
+691: Scegli il tuo aspetto
+692: Demone
+693: Angelo caduto
+694: Cavaliere
+695: Bestia
 696: Painkiller
 
-697: Double-frag!
-698: Triple-frag!
+697: Doppio frag!
+698: Triplo frag!
 699: Pentafrag!
-700: OMFG!
+700: Oh mamma!
 
-701: Additional hunt time granted.
-702: $PLAYER is our new Light Bearer.
-703: $PLAYER has lost the Light.
-704: The light was returned to its original place.
+701: Aggiunto tempo per la caccia.
+702: $PLAYER è il nostro nuovo portatore della luce.
+703: $PLAYER ha perso la luce.
+704: La luce è stata riportata al suo posto originale.
+705: CREDITI
+706: Mostra crediti
 
-705: CREDITS
-706: Show credits
+707: Bianco
+708: Rosso
 
-707: White
-708: Red
+709: PAUSA
 
-709: PAUSED
-
-710: Press 'Fire' to start
-711: FINAL RESULTS
+710: Premi 'Fuoco' per avviare
+711: RISULTATO FINALE
 
 # electro
-712: $PLAYER was fried by $KILLER.
+712: $KILLER ha messo fine alle sofferenze di $PLAYER.
 # shuriken
-713: $KILLER decorated $PLAYER with the shurikens.
+713: $KILLER ha messo fine alle sofferenze di $PLAYER.
 
 714: Ready
 715: Break
 
-716: Press 'Fire' to ready/unready
-717: Press 'AltFire' to switch teams
+716: Premi 'Fuoco' per ready/unready
+717: 'Alt Fuoco' - Seleziona la squadra
 
 # lava
-718: $PLAYER took a hot bath.
+718: $PLAYER ha dimostrato che la vita è breve.
 
 # Patch 1
 719: Spectate
@@ -926,44 +903,44 @@ iso-8859-1	# encoding - use cp1250 for Windows Central European
 723: SPECTATOR
 724: 'Fire' - to change player
 725: 'AltFire' - to fly
-726: 'Jump' - to join game
+726: 'Space' - to join game
 727: Spectators
 728: Spec
-729: minute(s)
-730: Match begins in %d seconds.
-731: Waiting for other players.
-732: 'Next/prev. Weapon' - to switch view
+729: minuto(i)
+730: Lo scontro inizia in %d secondi.
+731: In attesa di altri giocatori.
+732: 'Arma successiva/precedente' per cambiare visuale.
 733: Prediction (beta)
 734: Warning: this option enables experimental prediction code
 735: Warning: You need to reconnect for the changes to take effect. This experimental beta code requires much more processing power of your PC, turn it off if you experience serious slowdowns. Please read README file for patch 1.15 for more info about the prediction code.
 
-736: Weapon 6
-737: Weapon 7
-738: Weapon 8
-739: Weapon 9
-740: Weapon 10
+736: Arma 6
+737: Arma 7
+738: Arma 8
+739: Arma 9
+740: Arma 10
 
-741: Weapon respawn time
-742: Set weapon respawn time
+741: Tempo ricreazione arma
+742: Imposta tempo ricreazione arma
 743: Server FPS
-744: Set server FPS
+744: Imposta server FPS
 
-745: Please insert Painkiller CD3
+745: Inserisci il CD3 di Painkiller
+746: Previsione
 
-746: Prediction
-747: Reduces Internet lag at some additional CPU cost, not recommended for LAN play
+747: Riduce il ritardo Internet aumentando il carico della CPU, sconsigliato per il gioco in LAN
 
-748: You must reconnect to the server for this option to take effect
+748: Devi riconnetterti al server per attivare questa opzione
 
-749: Framerate Lock
-750: Framerate Lock description
+749: Blocco framerate
+750: Descrizione Blocco framerate
 751: Off
 752: Server FPS
 753: 2x Server FPS
 754: 3x Server FPS
 
-755: Physics FPS
-756: Set physics FPS
+755: Fisica FPS
+756: Imposta fisica FPS
 
-757: Low Quality Multiplayer FX
-758: Use special low quality effects in Multiplayer
+757: Bassa qualità effetti Multiplayer
+758: Usa effetti speciali in bassa qualità in Multiplayer
