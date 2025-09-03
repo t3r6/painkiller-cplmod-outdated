@@ -1,0 +1,88 @@
+o.s_SubClass.SoundsDefinitions = {
+	lie = {
+		samples = {'amp_lie1','amp_lie2','amp_lie3'},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	lieidle = {
+		samples = {'amp_lie_idle1_1','amp_lie_idle1_2','amp_lie_idle1_3'},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	lieidle2 = {
+		samples = {'amp_lie2idle_1','amp_lie2idle_2','amp_lie2idle_3'},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	step1 = {
+		samples = {'amp_krok1','amp_krok2'},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	step2 = {
+		samples = {'amp_krok2','amp_krok3'},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	walk = {
+		samples = {'amp_walk_effort1','amp_walk_effort2','amp_walk_effort3','amp_walk_effort4','amp_walk_effort5'},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	effort = {
+		samples = {'amp_walk_knee_effort1','amp_walk_knee_effort2'},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	jump = {
+		samples = {'amp_atack_jump1','amp_atack_jump2','amp_atack_jump3'},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	throw = {
+		samples = {'amp_prep_to_throw1','amp_prep_to_throw2'},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	throwvoice = {
+		samples = {'amp_throw_up_voice1'},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	throw_up = {
+		samples = {'amp_throw_up'},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	throw2 = {
+		samples = {'amp_atack_throw_up','amp_atack_throw_up2'},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	guts = {
+		samples = {'amp_atack_throw_guts'},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	halt = {
+		samples = {"amp_halt1","amp_halt2","amp_halt3","amp_halt4",},
+		dist1 = 30,
+		dist2 = 70,
+		playChance = 0.3,
+	},
+	bodyfalls = {
+		samples = {"amp_bodyfalls",},
+		dist1 = 16,
+		dist2 = 60,
+	},
+	round = {
+		samples = {'amp_round'},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	gib_splash = {
+		samples = {"$/impacts/meat-splash1","$/impacts/meat-splash2","$/impacts/meat-splash3","$/impacts/meat-splash4","$/impacts/meat-splash5"},
+		dist1 = 16,
+		dist2 = 60,
+	},
+}

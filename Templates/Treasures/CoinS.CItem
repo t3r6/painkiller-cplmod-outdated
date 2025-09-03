@@ -1,0 +1,15 @@
+o.Mesh = "|m_trans2|m_trans2"
+o.Pack = "moneta_srebrna.dat"
+
+o.Scale = 1.1
+o.TimeToLive = 20 * 30
+
+o.Value = 1
+o.takeDistance = 1.6
+o.force = {20,160,20}
+o.rotate = {10,80,10}
+o.angularDamping = 0.5
+o.Friction = 2.5
+
+o.SoundTake = {"item-coin-take1","item-coin-take2"}
+o.FX = {"moneta", 0.6, nil, {0, 0, 0}, {0.2, 0.2, 0.2}}

@@ -1,0 +1,37 @@
+o.s_SubClass.SoundsDefinitions = {
+	step = {
+		samples = {'banshee_krok1','banshee_krok2'},
+		dist1 = 3,
+		dist2 = 25,
+	},
+	step1 = {
+		samples = {'banshee_krok1'},
+		dist1 = 3,
+		dist2 = 25,
+	},
+	step2 = {
+		samples = {'banshee_krok2'},
+		dist1 = 3,
+		dist2 = 25,
+	},
+	hit = {
+		samples = {'banshee_hit1','banshee_hit2',},
+		dist1 = 12,
+		dist2 = 48,
+	},
+	atak = {
+		samples = {'banshee_at2','banshee_at1'},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	swish = {
+		samples = {'banshee_swish',},
+		dist1 = 4,
+		dist2 = 30,
+	},
+	bodyfalls = {
+		samples = {"$/actor/amputee/amp_bodyfalls",},
+		dist1 = 16,
+		dist2 = 60,
+	},
+}

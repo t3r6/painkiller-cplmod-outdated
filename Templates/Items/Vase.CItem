@@ -1,0 +1,22 @@
+Vase.Mesh = "WAZAShape"
+Vase.Pack = "cale_przedmioty.dat"
+o.SoundHitByBullet = {"bullet-stone","bullet-stone2","bullet-stone3","bullet-stone4",}
+
+Vase.DestroyPack = "waza_zlom.dat"
+Vase.Health = 2
+Vase.Mass = 60
+Vase.Destroy.Sound = {"ceramic-crash1","ceramic-crash2",
+    "ceramic-crash5","ceramic-crash3","ceramic-crash4","ceramic-crash6"}
+Vase.Destroy.ExplosionStrength = 0
+Vase.Destroy.AverageDelay = 0
+Vase.Destroy.AverageVariation = 0
+Vase.Destroy.Strength = 12
+Vase.Destroy.Effect = "explode_dust"
+Vase.Destroy.EffectScale = 0.3
+o.Destroy.Treasures = 
+{
+    Coins  = {4, 'g'},
+}
+Vase.Destroy.MinSpeedOnCollision = 10
+o.Destroy.SoundImpact = {"figure-stone-impact1","figure-stone-impact2"}
+o.SoundHitByBulletMiniGunOnly = true

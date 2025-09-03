@@ -1,0 +1,48 @@
+--============================================================================
+PBindToJoint = {
+    Offset = Vector:New(0,0,0),
+    Joint = 0,
+    _tEntity = nil,
+    _Model = nil,
+}
+Inherit(PBindToJoint,CProcess)
+--============================================================================
+function PBindToJoint:New(entity,model,jointname,ox,oy,oz)
+    local p = Clone(PBindToJoint)
+    p.BaseObj = "PBindToJoint"
+    p._tEntity = entity
+    p._Model = model
+    p.Joint = MDL.GetJointIndex(model,jointname)
+    p.Offset = Vector:New(ox,oy,oz)
+    p:Tick(0)
+    return p
+end
+--============================================================================
+function PBindToJoint:Tick(delta)
+    if self._ToKill then return end
+    if self.TimeToLive then
+		self.TimeToLive = self.TimeToLive - 1
+		if self.TimeToLive < 0 then
+			GObjects:ToKill(self)
+			self.TimeToLive = nil
+			return
+		end
+    end
+    if self.addVel then
+		self.Offset.X = self.Offset.X + self.addVel.X*delta
+		self.Offset.Y = self.Offset.Y + self.addVel.Y*delta
+		self.Offset.Z = self.Offset.Z + self.addVel.Z*delta
+    end
+	local x,y,z = MDL.TransformPointByJoint(self._Model,self.Joint,self.Offset.X,self.Offset.Y,self.Offset.Z)
+    ENTITY.SetPosition(self._tEntity,x,y,z)
+    local obj = EntityToObject[self._tEntity]
+    if obj then
+        obj.Pos.X = x
+        obj.Pos.Y = y
+        obj.Pos.Z = z
+    else
+        Game:Print("  ERROR: Pbindtojoint - zniknal mu obiekt")
+        GObjects:ToKill(self)
+    end
+end
+--============================================================================

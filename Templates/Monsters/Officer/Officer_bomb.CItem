@@ -1,0 +1,77 @@
+o.Mesh = "polySurfaceShape234"
+o.Pack = "granat.dat"
+o.Scale = 1.8
+o.Health = 9
+o.forceOut = 80				-- sila explozji na boki
+o.forceUp =	550				-- sila explozji do gory
+o.timeToLive = 1.6		 	-- w sec.
+o.Friction = 0.0
+o.flySpeed = 1000
+
+o.flame_FX = "firework"
+o.flame_FXscale = 0.5
+o.explosion_FX = "firework_explo"
+o.explosion_FXscale = 0.4
+
+o.ExplosionStrength = 2000
+o.ExplosionRange = 12
+o.Damage = 50
+
+function o:OnPrecache()
+--    Cache:PrecacheParticleFX(self.flame_FX)
+--    Cache:PrecacheParticleFX(self.explosion_FX)
+end
+
+function o:OnCreateEntity()
+	self:PO_Create(BodyTypes.SphereSweep,1.0,ECollisionGroups.HCGNormalNCWithSelf)
+	--ENTITY.PO_SetLinearDamping(self._Entity, 0.1)
+
+    ENTITY.EnableCollisions(self._Entity,true,0.3,0.01)
+
+	ENTITY.PO_SetMovedByExplosions(self._Entity, false)			-- ?
+	self._TimeToLive = self.timeToLive * FRand(0.8, 1.2)
+
+	if debugMarek then	
+		self._Flame = self:BindFX(self.flame_FX,self.flame_FXscale,nil,0,-0.3,0)
+	end
+	ENTITY.SetAngularVelocity(self._Entity, FRand(12, 15), FRand(0, 2), FRand(0, 2)) 
+end
+
+
+function o:OnCollision(x,y,z,nx,ny,nz,e_other,h_me,h_other)
+	ENTITY.EnableCollisions(self._Entity,false) -- disable next callbacks        
+	ENTITY.PO_Enable(self._Entity,false)
+
+	WORLD.Explosion2(x,y,z,self.ExplosionStrength,self.ExplosionRange,nil,AttackTypes.Grenade,self.Damage)  
+	self:Client_Explosion(x,y,z)
+
+	GObjects:ToKill(self)
+end
+
+
+function o:Client_Explosion(x,y,z)
+    ENTITY.PO_Enable(entity,false)
+    
+    -- special FX
+    SOUND.Play3D("actor/maso/maso_grenade-explosion",x,y,z,12)
+    AddPFX("Grenade",1.0,Vector:New(x,y,z))            
+    
+    -- physical parts
+    local n = math.random(1,2) -- how many (min,max)
+    local scales = {0.6, 0.8}
+    for i = 1, n do
+        local scale = scales[math.random(1,2)]
+        local ke = AddItem("KamykWybuch.CItem",scale,Vector:New(x,y+0.5+i/10,z),false,Quaternion:New_FromEuler(FRand(0,3.14), FRand(0,3.14), FRand(0,3.14)))
+        local vx = FRand(-20,30) -- velocity x
+        local vy = FRand(15,30)  -- velocity y
+        local vz = FRand(-20,30) -- velocity z
+        ENTITY.SetVelocity(ke,vx,vy,vz)
+        ENTITY.SetTimeToDie(ke,FRand(1,2)) -- lifetime (min,max)
+    end
+
+    -- light
+    AddAction({{"Light:a[1],a[2],a[3],200,200,100, 8, 10 , 1, 0.02,0.1,0.02"}},nil,nil,x,y+1.5,z)
+    if Game._EarthQuakeProc then
+        Game._EarthQuakeProc:Add(x,y,z, 15, 20 --[[g.ExplosionCamDistance--]], 0.25, 0.25)
+    end
+end

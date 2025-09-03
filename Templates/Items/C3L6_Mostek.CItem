@@ -1,0 +1,5 @@
+o.BaseObj = "CItem"
+o.Model = "C3L6_Mostek"
+o.Scale = 3
+
+o.SoundHitByBullet = {"bullet-wood","bullet-wood2","bullet-wood3",}

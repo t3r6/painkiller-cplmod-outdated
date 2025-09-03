@@ -1,0 +1,70 @@
+o.s_SubClass.SoundsDefinitions = {
+	idlez = {
+		samples = {'psycho_idle_zwiazany1_1','psycho_idle_zwiazany1_2','psycho_idle_zwiazany1_3'},
+		dist1 = 10,
+		dist2 = 30,
+	},
+	explode = {
+		samples = {'psycho_prepare_to_explode-voice1','psycho_prepare_to_explode-voice2','psycho_prepare_to_explode-voice3'},
+		dist1 = 10,
+		dist2 = 30,
+		disablePitch = true,
+	},
+	at1 = {
+		samples = {'psycho_attack1','psycho_attack2'},
+		dist1 = 10,
+		dist2 = 30,
+	},
+	swish = {
+		samples = {'psycho_swish'},
+		dist1 = 10,
+		dist2 = 30,
+	},
+	at3 = {
+		samples = {'psycho_attack3','psycho_attack4'},
+		dist1 = 10,
+		dist2 = 30,
+	},
+	swish2 = {
+		samples = {'psycho_swish2'},
+		dist1 = 10,
+		dist2 = 30,
+	},
+	step1 = {
+		samples = {'psycho_krok1'},
+		dist1 = 10,
+		dist2 = 30,
+	},
+	step2 = {
+		samples = {'psycho_krok2'},
+		dist1 = 10,
+		dist2 = 30,
+	},
+	step1zw = {
+		samples = {'psycho_elektro-krok1'},
+		dist1 = 10,
+		dist2 = 30,
+	},
+	step2zw = {
+		samples = {'psycho_elektro-krok2'},
+		dist1 = 10,
+		dist2 = 30,
+	},
+	halt = {
+		samples = {"psycho_halt1", "psycho_halt2", "psycho_halt3",},
+		dist1 = 30,
+		dist2 = 70,
+		playChance = 0.33,
+	},
+	bodyfalls = {
+		samples = {"psycho_bodyfalls"},
+		dist1 = 16,
+		dist2 = 60,
+	},
+	gib_splash = {
+		samples = {"$/impacts/meat-splash1","$/impacts/meat-splash2","$/impacts/meat-splash3","$/impacts/meat-splash4","$/impacts/meat-splash5"},
+		dist1 = 16,
+		dist2 = 60,
+	},
+
+}

@@ -1,0 +1,30 @@
+o.s_SubClass.ParticlesDefinitions = {
+	GasTankExplode = {
+		pfx = "grenade",
+		scale = 0.4,
+		offset = Vector:New(0,0,0),
+	},
+	explode = {
+		pfx = "tankdestroy",
+		scale = 1.5,
+		joint = "ROOOT",
+		offset = Vector:New(0,0,0),
+	},
+	tankflame = {
+		pfx = "tankflame",
+		scale = 1.0,
+		joint = "ROOOT",
+		offset = Vector:New(0,0,0),
+	},
+	tankflameTurret = {
+		pfx = "tankflame",
+		scale = 1.0,
+		joint = "k_head",
+		offset = Vector:New(0,0,0),
+	},
+	shot = {
+		pfx = "tankshot",
+		scale = 1.0,
+	},
+	
+}

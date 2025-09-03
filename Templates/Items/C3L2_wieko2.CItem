@@ -1,0 +1,18 @@
+o.BaseObj = "CItem"
+o.Pack = "C3L2_wieko2.dat"
+o.Mesh = "wieko2Shape"
+o.Scale = 0.3
+o.Destroy.MinSpeedOnCollision = 10
+o.Destroy.SoundImpact = {"klapa-wybuch","klapa-wybuch-ver2"}
+o.Destroy.SoundRange1 = 30
+o.Destroy.SoundRange2 = 80
+
+
+o.OnInitTemplate = CItem.StdOnInitTemplate
+
+function o:OnCreateEntity()
+	self:PO_Create(BodyTypes.FromMesh)
+end
+
+function o:OnDamage()
+end

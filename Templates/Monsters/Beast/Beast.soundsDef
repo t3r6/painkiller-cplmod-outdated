@@ -1,0 +1,62 @@
+o.s_SubClass.SoundsDefinitions = {
+	walk = {
+		samples = {'beast_krok1','beast_krok2',},
+		dist1 = 10,
+		dist2 = 30,
+		disablePitch = true,
+	},
+	walk1 = {
+		samples = {'beast_krok1'},
+		dist1 = 10,
+		dist2 = 30,
+		disablePitch = true,
+	},
+	walk2 = {
+		samples = {'beast_krok2',},
+		dist1 = 10,
+		dist2 = 30,
+		disablePitch = true,
+	},
+
+	halt = {
+		samples = {"beast_halt1", "beast_halt2","beast_halt3"},
+		dist1 = 30,
+		dist2 = 70,
+	},
+	hit = {
+		samples = {"beast_hit1","beast_hit2","beast_hit3",},
+		dist1 = 30,
+		dist2 = 70,
+	},
+	atak = {
+		samples = {"beast_attack1_1","beast_attack1_2"},
+		dist1 = 12,
+		dist2 = 40,
+	},
+	atakJump = {
+		samples = {'beast_attackjump_1','beast_attackjump_2'},
+		dist1 = 12,
+		dist2 = 40,
+	},
+	idle3 = {
+		samples = {'beast_idle3_1','beast_idle3_2'},
+		dist1 = 30,
+		dist2 = 70,
+	},
+	bodyfalls = {
+		samples = {"$/actor/hellbiker/hellb-boddyfalls1","$/actor/hellbiker/hellb-boddyfalls2"},
+		dist1 = 16,
+		dist2 = 60,
+	},
+	splash = {
+		samples = {"$/impacts/meat-splash1","$/impacts/meat-splash2","$/impacts/meat-splash3","$/impacts/meat-splash4","$/impacts/meat-splash5"},
+		dist1 = 16,
+		dist2 = 60,
+	},
+    toball = {
+        samples = {"beast_to_ball"},
+		dist1 = 16,
+		dist2 = 60,
+	},
+
+}

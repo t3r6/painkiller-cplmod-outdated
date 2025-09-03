@@ -1,0 +1,68 @@
+o.s_SubClass.SoundsDefinitions = {
+	halt = {
+		samples = {"s_germ-halt1", "s_germ-halt2", "s_germ-halt3"},
+		dist1 = 20,
+		dist2 = 50,
+	},
+	hit = {
+		samples = {'s_germ-hit1','s_germ-hit2','s_germ-hit3',},
+		dist1 = 30,
+		dist2 = 70,
+	},
+	step1 = {
+		samples = {'s_germ-krok1','s_germ-krok2'},
+		dist1 = 3,
+		dist2 = 20,
+	},
+	step2 = {
+		samples = {'s_germ-krok3','s_germ-krok4'},
+		dist1 = 3,
+		dist2 = 20,
+	},
+
+	
+	atak1 = {
+		samples = {'s_germ-atak1a','s_germ-atak2a'},
+		dist1 = 8,
+		dist2 = 30,
+	},
+	atak2 = {
+		samples = {'s_germ-atak1b','s_germ-atak2b'},
+		dist1 = 8,
+		dist2 = 30,
+	},
+	shoot = {
+		samples = {'s_germ-schmeisser-shoot-all'},
+		dist1 = 8,
+		dist2 = 30,
+	},
+
+	throw = {
+		samples = {'s_grenade-throw-swish'},
+		dist1 = 8,
+		dist2 = 30,
+	},
+	zawl = {
+		samples = {'s_grenade-zawleczka'},
+		dist1 = 8,
+		dist2 = 30,
+	},
+
+
+
+	bodyfalls = {
+		samples = {"s_germ_bodyfalls",},
+		dist1 = 16,
+		dist2 = 60,
+	},
+	weaponlost = {
+		samples = {"s_germ-weapon-lost",},
+		dist1 = 16,
+		dist2 = 60,
+	},
+	splash = {
+		samples = {"$/impacts/meat-splash1","$/impacts/meat-splash2","$/impacts/meat-splash3","$/impacts/meat-splash4","$/impacts/meat-splash5"},
+		dist1 = 16,
+		dist2 = 60,
+	},
+}

@@ -1,0 +1,102 @@
+o.Explosion = {
+	ExplosionStrength = 200,
+	ExplosionRange = 1.5,
+	Damage = 5,
+}
+
+
+ClownHood.Mesh = "pSphereShape1"
+ClownHood.Pack = "kamyk.dat"
+
+ClownHood.Scale = 0.02
+ClownHood.Restitution = 0.8 -- sprezystosc
+ClownHood.LinearDamping = 0.2  -- tlumienie liniowe
+ClownHood.HPDrainDistance = 1.5
+ClownHood.HPDrain = 2
+ClownHood.slowDown = 0.4
+
+o.TimeToLive = 40
+ClownHood.Mass = 40
+ClownHood.burninFX = "molotow"
+ClownHood.FXwhileFlying = "molotow"
+ClownHood.Decal = "molotov"
+ClownHood.whileFlyingSize = 0.06
+
+function ClownHood:OnPrecache()
+    --Cache:PrecacheParticleFX(self.burninFX)
+    --Cache:PrecacheDecal(self.Decal)    
+end
+
+function ClownHood:OnCreateEntity()
+	self:PO_Create(BodyTypes.Simple,0.2,ECollisionGroups.Particles)
+	ENTITY.EnableCollisions(self._Entity, true)
+    ENTITY.RemoveFromIntersectionSolver(self._Entity)
+
+   	local angle = math.random(0,360)
+	local x = math.sin(angle) + math.cos(angle)
+	local z = math.cos(angle) - math.sin(angle)
+	local y = math.random(60,80)* 0.01
+	local force = FRand(9, 16) * FRand(8, 17)
+	
+	--Game:Print("PO HItx "..self.Pos.X)
+	ENTITY.PO_Hit(self._Entity,self.Pos.X,self.Pos.Y,self.Pos.Z,x * force,y * force,z * force)
+    --ENTITY.EnableDraw(self._Entity,false)
+    
+    self.pfx = AddPFX(self.FXwhileFlying, self.whileFlyingSize)
+    ENTITY.RegisterChild(self._Entity,self.pfx)
+    ENTITY.PO_SetMovedByExplosions(self._Entity, false)
+
+    self.OnDamage = nil
+end
+
+function ClownHood:OnUpdate()
+    if math.random(100) < 5 then
+		if self.pfx then
+			--Game:Print("ClownHood - jeszcze leci")
+			local x,y,z,m = ENTITY.GetVelocity(self._Entity)
+			if m < 0.2 and y < 0.1 then
+				--ENTITY.Release(self.pfx)
+			    ENTITY.PO_Enable(self._Entity, false)
+				ENTITY.SetVelocity(self._Entity, 0,0,0)
+				Game:Print("ma mala predkosc wiec go usuwam")
+				--self.pfx = nil
+			end
+		end
+    end
+end
+
+
+function o:OnCollision(x,y,z,nx,ny,nz,e)
+    --ENTITY.Release(self.pfx)
+    --self.pfx = nil
+    
+
+	--[[if self.Decal then
+        local v = Vector:New(ENTITY.GetVelocity(self._Entity))
+        v:Normalize()
+    
+        local b,d,x,y,z,nx,ny,nz,he,e = WORLD.LineTraceFixedGeom(x-v.X,y-v.Y,z-v.Z,x+v.X,y+v.Y,z+v.Z)
+        if b and e then
+            ENTITY.SpawnDecal(e,self.Decal,x,y,z,0,1,0)
+        end
+    end--]]
+
+
+    ENTITY.PO_Enable(self._Entity, false)
+	ENTITY.SetVelocity(self._Entity, 0,0,0)
+	self.Pos.X = x
+	self.Pos.Y = y
+	self.Pos.Z = z
+end
+
+
+
+function ClownHood:OnRelease()
+	if self._soundSample then
+		SOUND3D.Stop(self._soundSample)
+	end
+	local x,y,z = self.Pos.X,self.Pos.Y,self.Pos.Z
+	WORLD.Explosion2(x,y,z, self.Explosion.ExplosionStrength,self.Explosion.ExplosionRange,nil,AttackTypes.Rocket,self.Explosion.Damage)
+	PlaySound3D("impacts/bullet-glass5",x,y,z,20,50)
+	AddPFX("molotowexplo",0.05,self.Pos)
+end

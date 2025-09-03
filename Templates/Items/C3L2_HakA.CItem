@@ -1,0 +1,16 @@
+o.BaseObj = "CItem"
+o.Model = "C3L2_HakA"
+o.Scale = 1
+o.Mass = 600
+
+o.CollisionDetect = {
+	MinTime = 1.2,
+	MinStren = 5.0,
+	joint = "joint2_getmass",
+	sound = "$/actor/hellbiker/hellb2-weapon-lost",
+	soundDist1 = 12,
+	soundDist2 = 30,
+}
+
+o.SoundHitByBullet = {"bullet-metal","bullet-metal2","bullet-metal3","bullet-metal4","bullet-metal5","bullet-metal6",}
+o.SoundHitByBulletMiniGunOnly = true

@@ -1,0 +1,67 @@
+o.s_SubClass.SoundsDefinitions = {
+	halt = {
+		samples = {"s_russ-halt1", "s_russ-halt2", "s_russ-halt3"},
+		dist1 = 20,
+		dist2 = 50,
+	},
+	hit = {
+		samples = {'s_russ-hit1','s_russ-hit2','s_russ-hit3',},
+		dist1 = 30,
+		dist2 = 70,
+	},
+	atak1 = {
+		samples = {'s_russ-atak1a','s_russ-atak2a'},
+		dist1 = 8,
+		dist2 = 30,
+	},
+	atak2 = {
+		samples = {'s_russ-atak1b','s_russ-atak2b'},
+		dist1 = 8,
+		dist2 = 30,
+	},
+	shoot = {
+		samples = {'s_russ-pepesza-shoot-all'},
+		dist1 = 8,
+		dist2 = 30,
+	},
+	step1 = {
+		samples = {'s_russ-krok1',},
+		dist1 = 3,
+		dist2 = 20,
+	},
+	step2 = {
+		samples = {'s_russ-krok2',},
+		dist1 = 3,
+		dist2 = 20,
+	},
+
+	throw = {
+		samples = {'s_grenade-throw-swish'},
+		dist1 = 8,
+		dist2 = 30,
+	},
+	zawl = {
+		samples = {'s_grenade-zawleczka'},
+		dist1 = 8,
+		dist2 = 30,
+	},
+
+
+	bodyfalls = {
+		samples = {"s_russ_bodyfalls",},
+		dist1 = 16,
+		dist2 = 60,
+	},
+	weaponlost = {
+		samples = {"s_russ-weapon-lost",},
+		dist1 = 16,
+		dist2 = 60,
+	},
+	splash = {
+		samples = {"$/impacts/meat-splash1","$/impacts/meat-splash2","$/impacts/meat-splash3","$/impacts/meat-splash4","$/impacts/meat-splash5"},
+		dist1 = 16,
+		dist2 = 60,
+	},
+
+
+}

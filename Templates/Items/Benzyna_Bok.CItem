@@ -1,0 +1,7 @@
+o.Scale = 1
+o.Mass = 1999
+o.Pack = "benzyna_bok.dat"
+o.Mesh = "polySurfaceShape70635"
+o.Friction = 5
+o.SoundHitByBullet = {"bullet-metal","bullet-metal2","bullet-metal3","bullet-metal4","bullet-metal5","bullet-metal6",}
+o.SoundHitByBulletMiniGunOnly = true

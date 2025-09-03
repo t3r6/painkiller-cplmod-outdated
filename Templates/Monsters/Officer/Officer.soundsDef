@@ -1,0 +1,53 @@
+o.s_SubClass.SoundsDefinitions = {
+	hit = {
+		samples = {'offic-hit1','offic-hit2','offic-hit3',},
+		dist1 = 30,
+		dist2 = 70,
+	},
+	atak1 = {
+		samples = {'offic-at1','offic-at2'},
+		dist1 = 10,
+		dist2 = 30,
+		disablePitch = true,
+	},	
+	atak2 = {
+		samples = {'offic-at3','offic-at4'},
+		dist1 = 10,
+		dist2 = 30,
+		disablePitch = true,
+	},	
+	halt = {
+		samples = {"offic-halt1", "offic-halt2", "offic-halt3"},
+		dist1 = 20,
+		dist2 = 50,
+	},
+
+	raca = {
+		samples = {"offic-raca-voice"},
+		dist1 = 20,
+		dist2 = 50,
+	},
+
+	flare = {
+		samples = {"offic-flare-shoot"},
+		dist1 = 20,
+		dist2 = 50,
+	},
+
+	bodyfalls = {
+		samples = {"offic_bodyfalls",},
+		dist1 = 16,
+		dist2 = 60,
+	},
+	weaponlost = {
+		samples = {"offic-weapon-lost",},
+		dist1 = 16,
+		dist2 = 60,
+	},
+	splash = {
+		samples = {"$/impacts/meat-splash1","$/impacts/meat-splash2","$/impacts/meat-splash3","$/impacts/meat-splash4","$/impacts/meat-splash5"},
+		dist1 = 16,
+		dist2 = 60,
+	},
+
+}

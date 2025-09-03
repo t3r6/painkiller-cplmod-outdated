@@ -1,0 +1,34 @@
+o.s_SubClass.SoundsDefinitions = {
+	bodyfalls = {
+		samples = {"$/actor/amputee/amp_bodyfalls",},
+		dist1 = 16,
+		dist2 = 60,
+	},
+	hit = {
+		samples = {'nun_hit1','nun_hit3',},
+		dist1 = 12,
+		dist2 = 48,
+	},
+	weaponlost = {
+		samples = {"nun-weapon-lost1","nun-weapon-lost2","nun-weapon-lost3"},
+		dist1 = 16,
+		dist2 = 50,
+	},
+	atak = {
+		samples = {'nun_at1','nun_at2','nun_at3',},
+		dist1 = 4,
+		dist2 = 8,
+	},
+	swish = {
+		samples = {'nun-attack-swish','nun-attack-swish2',},
+		dist1 = 4,
+		dist2 = 10,
+	},
+
+	gib_splash = {
+		samples = {"$/impacts/meat-splash1","$/impacts/meat-splash2","$/impacts/meat-splash3","$/impacts/meat-splash4","$/impacts/meat-splash5"},
+		dist1 = 16,
+		dist2 = 60,
+	},
+
+}

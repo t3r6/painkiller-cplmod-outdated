@@ -1,0 +1,16 @@
+o.BaseObj = "CItem"
+o.Model = "C1L4_TrupB"
+o.Scale = 1.5
+o.Mass = 80
+o.InertiaTensorMultiplier = 3
+
+
+o.RagdollCreakSound = {
+	checkSpeed = 0.5,		-- sec.
+	joint = "k_zebra",
+	minVel = 2.0,
+	samples = {"doors/rope-creak1","doors/rope-creak2","doors/rope-creak3"},
+	dist1 = 14,
+	dist2 = 42,
+	minDelayBetweenSounds = 2.0,
+}

@@ -1,0 +1,97 @@
+o.s_SubClass.SoundsDefinitions = {
+	splash = {
+		samples = {"$/impacts/meat-splash1","$/impacts/meat-splash2","$/impacts/meat-splash3","$/impacts/meat-splash4","$/impacts/meat-splash5"},
+		dist1 = 16,
+		dist2 = 60,
+	},
+	halt = {
+		samples = {"exe-halt1", "exe-halt2", "exe-halt3"},
+		dist1 = 30,
+		dist2 = 70,
+	},
+	hit = {
+		samples = {'exe-hit1','exe-hit2','exe-hit3','exe-hit4',},
+		dist1 = 30,
+		dist2 = 70,
+	},
+	bodyfalls = {
+		samples = {'exe-boddyfalls'},
+		dist1 = 16,
+		dist2 = 60,
+	},
+	stepl = {
+		samples = {'exe-krok1',},
+		dist1 = 10,
+		dist2 = 30,
+	},
+	stepr = {
+		samples = {'exe-krok2',},
+		dist1 = 10,
+		dist2 = 30,
+	},
+	atak2 = {
+		samples = {'exe-atack2_1','exe-atack2_2','exe-atack2_3'},
+		dist1 = 10,
+		dist2 = 30,
+		disablePitch = true,
+	},	
+	atak3 = {
+		samples = {'exe-atack3_1','exe-atack3_2',},
+		dist1 = 10,
+		dist2 = 30,
+		disablePitch = true,
+	},
+	missed = {
+		samples = {'exe-atack-missed-ground1','exe-atack-missed-ground2'},
+		dist1 = 12,
+		dist2 = 48,
+	},
+	swish = {
+		samples = {'exe-atack-swish'},
+		dist1 = 12,
+		dist2 = 48,
+	},
+	idle2 = {
+		samples = {'exe-idle2_1','exe-idle2_2','exe-idle2_3',},
+		dist1 = 12,
+		dist2 = 48,
+		disablePitch = true,
+	},
+	idle3 = {
+		samples = {'exe-idle3_1','exe-idle3_2',},
+		playChance = 0.35,
+		dist1 = 12,
+		dist2 = 48,
+	},
+	slice = {
+		samples = {'exe-tnietrupa1','exe-tnietrupa2'},
+		dist1 = 12,
+		dist2 = 48,
+		disablePitch = true,
+	},
+	sliceHit = {
+		samples = {'exe-tnietrupa-hit'},
+		dist1 = 12,
+		dist2 = 48,
+	},
+	spike = {
+		samples = {'exe-shootaxespike'},
+		dist1 = 12,
+		dist2 = 48,
+	},
+	spikevoice = {
+		samples = {"exe-shootaxespike-voice1","exe-shootaxespike-voice2",},
+		dist1 = 12,
+		dist2 = 48,
+	},
+    backspike = {
+        samples = {"exe-backaxespike",},
+		dist1 = 12,
+		dist2 = 48,
+	},
+    backspikev = {
+        samples = {"exe-backaxespike-voice",},
+		dist1 = 12,
+		dist2 = 48,
+	},
+}

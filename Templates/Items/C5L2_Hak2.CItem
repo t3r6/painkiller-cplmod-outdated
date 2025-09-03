@@ -1,0 +1,6 @@
+o.BaseObj = "CItem"
+o.Model = "C5L2_Hak2"
+o.Scale = 3
+
+o.SoundHitByBullet = {"bullet-metal","bullet-metal2","bullet-metal3","bullet-metal4","bullet-metal5","bullet-metal6",}
+o.SoundHitByBulletMiniGunOnly = true

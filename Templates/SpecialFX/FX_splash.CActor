@@ -1,0 +1,53 @@
+FX_splash.Model = "splash"
+FX_splash.Scale = 2
+FX_splash.NotCountable = true
+o.CreatePO = false
+
+FX_splash.s_SubClass = 
+{
+    Animations = {  
+        idle        = {1.2},
+    },
+}
+
+function FX_splash:OnPrecache()
+	Cache:PrecacheParticleFX("FX_splash")
+	Cache:PrecacheParticleFX("FX_splash1")
+end
+
+function FX_splash:OnCreateEntity()
+    self:BindFX("FX_splash",0.15,"e1")
+    self:BindFX("FX_splash",0.15,"e2")
+    self:BindFX("FX_splash",0.15,"e3")
+    self:BindFX("FX_splash",0.15,"e4")
+    self:BindFX("FX_splash",0.15,"e5")
+    self:BindFX("FX_splash",0.15,"e6")
+    self:BindFX("FX_splash",0.15,"e7")
+    self:BindFX("FX_splash",0.15,"e8")
+    self:BindFX("FX_splash",0.15,"e9")
+    self:BindFX("FX_splash",0.15,"e10")
+    self:BindFX("FX_splash",0.15,"e11")
+    self:BindFX("FX_splash",0.15,"e12")
+    self:BindFX("FX_splash",0.15,"e13")
+    self:BindFX("FX_splash",0.15,"e14")
+    self:BindFX("FX_splash",0.15,"e15")
+    self:BindFX("FX_splash",0.15,"e16")
+    self:BindFX("FX_splash1",0.3,"e17")
+    self:BindFX("FX_splash1",0.3,"e18")
+    self:BindFX("FX_splash1",0.3,"e19")
+    self:BindFX("FX_splash1",0.3,"e20")
+end
+
+function FX_splash:OnFinishAnim(name)
+    self:UnregisterAllChildren()
+    GObjects:ToKill(self)
+end
+
+
+function FX_splash:OnEditTick(delta)
+    if INP.Key(Keys.Space) == 1 then
+        self:OnFinishAnim()
+        self:OnCreateEntity()
+        self:ForceAnim(self.Animation,true,nil,0)
+    end
+end

@@ -1,0 +1,19 @@
+o.s_SubClass.SoundsDefinitions = {
+	halt = {
+		samples = {"deto-halt1", "deto-halt2", "deto-halt3"},
+		dist1 = 20,
+		dist2 = 50,
+	},
+	hit = {
+		samples = {'deto-hit1','deto-hit2','deto-hit3',},
+		dist1 = 30,
+		dist2 = 70,
+	},
+	deto = {
+		samples = {'deto-deto',},
+		dist1 = 30,
+		dist2 = 70,
+	},
+
+
+}

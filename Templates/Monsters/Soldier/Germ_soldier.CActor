@@ -1,0 +1,9 @@
+o.BaseObj = "Russ_soldier.CActor"
+o.Model = "szkop"
+
+
+o.s_SubClass.Sounds = {
+		onAttack = {"s_germ-attackscream1","s_germ-attackscream2","s_germ-attackscream3","s_germ-attackscream4",},
+		death = {"s_germ-death1","s_germ-death2","s_germ-death3",},
+		onAttackOnce = "halt",
+	}

@@ -1,0 +1,26 @@
+BarrelSmall.Mesh = "BECZKA_MALAShape"
+BarrelSmall.Pack = "cale_przedmioty.dat"
+o.SoundHitByBullet = {"bullet-wood","bullet-wood2","bullet-wood3",}
+
+
+BarrelSmall.DestroyPack = "beczka_mala_zlom.dat"
+BarrelSmall.Health = 40
+BarrelSmall.Mass = 220
+BarrelSmall.Scale = 0.5
+BarrelSmall.Destroy.Sound = {"barrel-wood-explode"}
+BarrelSmall.Destroy.Strength = 120
+BarrelSmall.Destroy.ExplosionStrength = 10
+BarrelSmall.Destroy.ExplosionRadius = 6
+BarrelSmall.Destroy.ExplosionStrength = 1600
+BarrelSmall.Destroy.ExplosionDamage = 220
+BarrelSmall.Destroy.AverageDelay = 32
+BarrelSmall.Destroy.AverageVariation = 16
+BarrelSmall.Destroy.Effect = "explo_beczka"
+BarrelSmall.Destroy.EffectScale = 0.2
+o.Destroy.Treasures = 
+{
+    Coins  = {1, 'g'},
+}
+BarrelSmall.Destroy.Light = true    
+BarrelSmall.Destroy.MinSpeedOnCollision = 16
+o.Destroy.SoundImpact = {"barrel-wood-fallsdown1","barrel-wood-fallsdown2","barrel-wood-fallsdown3"}

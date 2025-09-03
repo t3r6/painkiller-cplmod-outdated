@@ -1,0 +1,48 @@
+o.s_SubClass.SoundsDefinitions = {
+	step1 = {
+		samples = {'bdemon_krokl',},
+		dist1 = 10,
+		dist2 = 30,
+	},
+	step2 = {
+		samples = {'bdemon_krokp',},
+		dist1 = 10,
+		dist2 = 30,
+	},
+	halt = {
+		samples = {'bdemon_halt1','bdemon_halt2'},
+		dist1 = 30,
+		dist2 = 70,
+	},
+	atak = {
+		samples = {'bdemon_atak1','bdemon_atak2','bdemon_atak3',},
+		dist1 = 10,
+		dist2 = 20,
+	},
+	swish = {
+		samples = {'$/actor/leper/leper_swish1',},
+		dist1 = 10,
+		dist2 = 20,
+	},
+	swish2 = {
+		samples = {'$/actor/psycho_elektro/psycho_swish2',},
+		dist1 = 10,
+		dist2 = 20,
+	},
+	angry = {
+		samples = {'bdemon-angry1','bdemon-angry2'},
+		dist1 = 30,
+		dist2 = 70,
+	},
+	bodyfalls = {
+		samples = {"$/actor/zombie_soldier/zombs_bodyfalls1","$/actor/zombie_soldier/zombs_bodyfalls2"},
+		dist1 = 16,
+		dist2 = 60,
+	},
+	gib_splash = {
+		samples = {"$/impacts/meat-splash1","$/impacts/meat-splash2","$/impacts/meat-splash3","$/impacts/meat-splash4","$/impacts/meat-splash5"},
+		dist1 = 16,
+		dist2 = 60,
+	},
+
+}

@@ -1,0 +1,46 @@
+----------------------------------------------------------------------------------
+-- Biegnie na playera - zawsze go widzi, jesli jest w zasiegu, to odpala animacje
+----------------------------------------------------------------------------------
+AiStates.runToPlayer = {
+	name = "runToPlayer",
+}
+
+
+function AiStates.runToPlayer:OnInit(brain)
+end
+
+function AiStates.runToPlayer:OnUpdate(brain)
+	local actor = brain._Objactor
+	local aiParams = actor.AiParams
+
+	if brain.r_closestEnemy then
+		if not actor._isWalking or math.random(100) < 11 then
+			actor:WalkTo(Player._groundx, Player._groundy, Player._groundz)
+		end
+	end
+
+	local dist = Dist3D(actor._groundx, actor._groundy, actor._groundz, Player._groundx, Player._groundy, Player._groundz)
+	if dist < aiParams.actionDistance then
+		if aiParams.collisionAnim then
+			actor:SetAnim(aiParams.collisionAnim, false)
+		else
+			actor:ExplodeBarrel(0.1)
+		end
+        actor.AIenabled = false
+	end
+
+end
+
+function AiStates.runToPlayer:OnRelease(brain)
+	--Game:Print("error:RUN TO ON RELEASE")
+	--Game.freezeUpdate = true
+end
+
+function AiStates.runToPlayer:Evaluate(brain)
+	local actor = brain._Objactor
+
+	if brain.r_closestEnemy or actor.Animation == actor.AiParams.collisionAnim then
+		return 0.9
+	end
+	return 0.0
+end

@@ -1,0 +1,179 @@
+EndOfMatch.TickCount = 0
+EndOfMatch.Color = Color:New(255,0,0)
+EndOfMatch.TimeOut = 0
+EndOfMatch.Mode = 0 -- 0 -- death, 1 -- end of match, 2 -- start of match
+--============================================================================
+function EndOfMatch:New(mode)
+--    Log("EndOfMatch:New - 1\n")    
+    local p = Clone(self)
+    if not mode then mode = 0 end		
+--    Log("EndOfMatch:New - 2\n")    
+    if mode == 0 and Player and Player._Entity and Player._Entity ~=0 then
+        p._pEntity = Player._Entity
+        local x,y,z = CAM.GetPos()
+--        Log("EndOfMatch:New - 3\n")    
+        CAM.SetPos(x,y+2,z)
+        x,y,z = ENTITY.GetPosition(Player._Entity)
+--        Log("EndOfMatch:New - 4\n")    
+        p.PlayerPos = Vector:New(x,y,z)
+        if Player._gibbed or Cfg.LowQualityMultiplayerSFX then 
+            p.PlayerGibbed = true 
+        end
+--        Log("EndOfMatch:New - 5\n")    
+    else
+        if mode == 1 then
+--			Log("EndOfMatch:New - 6\n")    
+			CAM.SetPos(Lev._orgPos.X , Lev._orgPos.Y, Lev._orgPos.Z)        
+--			Log("EndOfMatch:New - 7\n")    
+            SOUND.StreamSetVolume(0,0)
+--            Log("EndOfMatch:New - 8\n")    
+            SOUND.StreamSetVolume(1,0)
+--            Log("EndOfMatch:New - 9\n")    
+            
+--            Log("EndOfMatch:New - 10\n")    
+            SOUND.StreamSetVolume(2,Cfg.AmbientVolume)
+--            Log("EndOfMatch:New - 11\n")    
+            SOUND.StreamPlay(2)
+--            Log("EndOfMatch:New - 12\n")    
+        end
+    end
+--    Log("EndOfMatch:New - 13\n")    
+    Hud.Enabled = false
+    p.Mode = mode        
+--    Log("EndOfMatch:New - 14\n")    
+    return p
+end
+--============================================================================
+function EndOfMatch:OnToKill()
+    --Log("EndOfMatch:OnToKill - 1\n")
+    --SOUND.StreamLoad(2,"")
+    SOUND.StreamPause(2)
+    SOUND.StreamSetVolume(2,0)
+    Log("EndOfMatch:OnToKill - 2\n")
+    MPSTATS.Hide()
+    Log("EndOfMatch:OnToKill - 3\n")
+end
+--============================================================================
+function EndOfMatch:Tick(delta)
+
+    --Log("EndOfMatch:Tick - Start\n")    
+    if self._pEntity then
+        if ENTITY.Exist(self._pEntity) and not self.PlayerGibbed then -- follow ragdoll
+            local j2 = MDL.GetJointIndex(self._pEntity,"K_ogo")            
+            local x,y,z = MDL.GetJointPos(self._pEntity,j2)                        
+            self.PlayerPos:Interpolate(x,y,z,0.33)
+        end        
+        CAM.LookAt(self.PlayerPos.X+0.01, self.PlayerPos.Y, self.PlayerPos.Z+0.01)
+    elseif Lev and Lev._orgPos and self.Mode ~= 2 then 
+        local x,y,z = CAM.GetPos()            
+        local lx,ly,lz = Lev._orgPos.X - x, Lev._orgPos.Y - y ,Lev._orgPos.Z - z    
+        CAM.SetPos(x + lx*0.002, y + ly*0.002, z + lz*0.002)
+        CAM.SetPos(Lev._orgPos.X , Lev._orgPos.Y, Lev._orgPos.Z)
+    
+        if self.PlayerPos then 
+            CAM.LookAt(self.PlayerPos.X,self.PlayerPos.Y,self.PlayerPos.Z)
+        else
+            CAM.SetAng(Lev._orgAng.X+math.sin(Game.LevelTime/2),Lev._orgAng.Y+math.sin(Game.LevelTime),Lev._orgAng.Z)
+        end
+    end
+ 
+    self.TimeOut = self.TimeOut + delta     
+    if self.TimeOut > 1.5 or self.Mode == 2 then
+        if INP.Action(Actions.Fire) then
+            if self.Mode == 0 then
+				Game.PlayerRespawnRequest(Player.ClientID)
+				INP.RemoveAction(Actions.Fire)
+				INP.RemoveAction(Actions.AltFire)
+            elseif self.Mode == 2 then
+				if MPCfg.GameMode == "Team Deathmatch" or MPCfg.GameMode == "People Can Fly" then
+					local ps = Game.PlayerStats[NET.GetClientID()]
+					if ps.State == 1 then -- ready
+						Console:Cmd_NOTREADY()
+					else -- unready or break
+						Console:Cmd_READY()
+                        if MPCfg.GameState == GameStates.Playing then
+                            Game.PlayerRespawnRequest(Player.ClientID)
+                        end
+					end
+					INP.Reset()
+				else
+					Game.PlayerRespawnRequest(Player.ClientID)
+					INP.RemoveAction(Actions.Fire)
+					INP.RemoveAction(Actions.AltFire)
+				end
+            else
+                if Game:IsServer() then
+                    StringToDo = "Game:LoadNextMap()"
+                    return
+                end            
+            end
+        end
+        
+        if INP.Action(Actions.AltFire) and self.Mode == 2 then
+			if Cfg.Team == 0 then
+				Console:Cmd_TEAM(2)
+			else
+				Console:Cmd_TEAM(1)
+			end
+			INP.Reset()
+        end
+        
+        if self.Mode == 1 and Game:IsServer() and self.TimeOut > 15 then
+            StringToDo = "Game:LoadNextMap()"
+        end            
+    end
+    --Log("EndOfMatch:Tick - End\n")    
+
+end
+--============================================================================
+function EndOfMatch:Render(delta)
+    --Log("EndOfMatch:Render - Start\n")    
+    if not self.PlayerPos or self.TimeOut > 1.5 then
+        MPSTATS.Show()
+        --Log("EndOfMatch:Render - 1\n")    
+        local w,h = R3D.ScreenSize()
+        --Log("EndOfMatch:Render - 2\n")    
+        if self.Mode == 0 or (Game:IsServer() and self.Mode ~= 2) then
+            --Log("EndOfMatch:Render - 3\n")    
+			HUD.SetFont("timesbd",22)
+            --Log("EndOfMatch:Render - 4\n")    
+			local tw = HUD.GetTextWidth(TXT.MPStats.PressFire)
+			HUD.PrintXY(w/2-tw/2+1,h-29,TXT.MPStats.PressFire,"timesbd",15,15,15,22)
+			HUD.PrintXY(w/2-tw/2,h-30,TXT.MPStats.PressFire,"timesbd",225,65,68,22)
+            --Log("EndOfMatch:Render - 5\n")    
+        end
+        if self.Mode == 1 then
+            --Log("EndOfMatch:Render - 6\n")    
+			HUD.SetFont("timesbd",26)
+            --Log("EndOfMatch:Render - 7\n")    
+			local tw = HUD.GetTextWidth(TXT.MPStats.FinalResults)
+			HUD.PrintXY(w/2-tw/2+1,31,TXT.MPStats.FinalResults..":","timesbd",15,15,15,26)
+            HUD.PrintXY(w/2-tw/2,30,TXT.MPStats.FinalResults..":","timesbd",225,25,25,26)
+            --Log("EndOfMatch:Render - 8\n")    
+        end
+        if self.Mode == 2 then
+			if MPCfg.GameMode == "Team Deathmatch" or MPCfg.GameMode == "People Can Fly" then
+                --Log("EndOfMatch:Render - 9\n")    
+				local tw = HUD.GetTextWidth(TXT.MPStats.PressFireReady)
+				HUD.PrintXY(w/2-tw/2+1,h-49,TXT.MPStats.PressFireReady,"timesbd",15,15,15,22)
+				HUD.PrintXY(w/2-tw/2,h-50,TXT.MPStats.PressFireReady,"timesbd",225,65,68,22)
+                --Log("EndOfMatch:Render - 10\n")    
+                if MPCfg.GameMode ~= "People Can Fly" then
+					tw = HUD.GetTextWidth(TXT.MPStats.PressAltFireSwitch)
+					HUD.PrintXY(w/2-tw/2+1,h-29,TXT.MPStats.PressAltFireSwitch,"timesbd",15,15,15,22)
+					HUD.PrintXY(w/2-tw/2,h-30,TXT.MPStats.PressAltFireSwitch,"timesbd",225,65,68,22)
+				end
+                --Log("EndOfMatch:Render - 11\n")    
+			else
+                --Log("EndOfMatch:Render - 12\n")    
+				local tw = HUD.GetTextWidth(TXT.MPStats.PressFire)
+				HUD.PrintXY(w/2-tw/2+1,h-29,TXT.MPStats.PressFire,"timesbd",15,15,15,22)
+				HUD.PrintXY(w/2-tw/2,h-30,TXT.MPStats.PressFire,"timesbd",225,65,68,22)
+                --Log("EndOfMatch:Render - 13\n")    
+			end
+		end
+    end
+    --Log("EndOfMatch:Render - End\n")    
+end
+--============================================================================
+

@@ -1,0 +1,60 @@
+o.s_SubClass.SoundsDefinitions = {
+	sword = {
+		samples = {'$/actor/giant/kolec-wysuwa_sie'},
+		dist1 = 150,
+		dist2 = 500,
+	},
+	swordout = {
+		samples = {'$/actor/giant/kolec-chowa_sie'},
+		dist1 = 150,
+		dist2 = 500,
+	},
+	charge = {
+		samples = {'alastor_charge-voice'},
+		dist1 = 150,
+		dist2 = 500,
+		disablePitch = true,
+	},
+	atak = {
+		samples = {'alastor_attack1-attackvoice'},
+		dist1 = 150,
+		dist2 = 500,
+	},
+	ground = {
+		samples = {'alastor_attack3-groundhit'},
+		dist1 = 150,
+		dist2 = 500,
+	},
+	prepare = {
+		samples = {'$/actor/lucifer/luc_attack-prepare'},
+		dist1 = 150,
+		dist2 = 500,
+	},
+	atak1 = {
+		samples = {'$/actor/lucifer/luc_attack1'},
+		dist1 = 150,
+		dist2 = 500,
+	},
+	atak2 = {
+		samples = {'$/actor/lucifer/luc_attack2'},
+		dist1 = 150,
+		dist2 = 500,
+	},
+	prepare2 = {
+		samples = {'alastor_attack1-prepare'},
+		dist1 = 150,
+		dist2 = 500,
+	},
+    bodyfalls = {
+        samples = {'alastor_krok1','alastor_krok2'},
+		dist1 = 150,
+		dist2 = 500,
+	},
+    hit = {
+        samples = {'alastor-rotate-voice3'},
+		dist1 = 150,
+		dist2 = 500,
+	},
+
+}
+
